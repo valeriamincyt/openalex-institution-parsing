@@ -1,3 +1,10 @@
 *.DS_Store
 *.ipynb_checkpoints*
 *V2/003_Deploy/model_to_api/container/model_files/*
+*V2/Datos
+*V2/parsingInst-env
+*V2/001_Exploration/generadorArchivos.py
+*V2/001_Exploration/artificial_empty_affs.parquet
+*V2/001_Exploration/__pycache__/
+*V2/test.ipynb
+*V2/test.py
