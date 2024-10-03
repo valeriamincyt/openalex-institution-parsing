@@ -36,7 +36,8 @@ ror['labels_len'] = ror['labels'].apply(len)
 ror['address_len'] = ror['addresses'].apply(len)
 ror['address'] = ror['addresses'].apply(lambda x: x[0])
 ror['ror_id'] = ror['id'].apply(lambda x: x.split("/")[-1])
-ror['types'] = ror['types'].apply(lambda x: x[0])
+#ror['types'] = ror['types'].apply(lambda x: x[0])
+ror['types'] = ror['types'].apply(lambda x: x[0] if len(x)>0 else "")
 
 # %%
 ror[ror['ror_id']=='05kxf7578']
