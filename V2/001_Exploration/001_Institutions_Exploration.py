@@ -599,3 +599,4 @@ ror_to_join_final.merge(insts, how='inner',
 .to_parquet("ror_strings.parquet")
 
 
+print('FINALIZADO OK')

@@ -1,7 +1,7 @@
 # %%
 import pickle
 import json
-import redshift_connector
+#import redshift_connector
 import pandas as pd
 pd.set_option("display.max_colwidth", None)
 pd.set_option("display.max_columns", None)
@@ -24,7 +24,9 @@ from random import sample
 
 # %%
 # location where current files are located
-curr_model_artifacts_location = "./curr_location/"
+ruta = "./"
+rutaDatos ="../Datos/"
+curr_model_artifacts_location = "../Datos/institution_tagger_v2_artifacts/"
 
 # Load the needed files
 with open(f"{curr_model_artifacts_location}departments_list.pkl", "rb") as f:
@@ -160,13 +162,13 @@ def list_of_all_names(oa_name, ror_names, extra_names, use_extra_names=False):
 # %%
 # this file is not provided but the needed data is all institutions in OpenAlex
 # with the following columns: 'ror_id','affiliation_id','display_name'
-institutions_df = pd.read_parquet("OA_static_institutions_single_file.parquet")
+institutions_df = pd.read_parquet(f"{rutaDatos}OA_static_institutions_single_file.parquet")
 
 # %%
 # institutions = institutions_df.set_index('affiliation_id').to_dict(orient='index')
 
 # %%
-ror = pd.read_json("./v1.19-2023-02-16-ror-data.json")
+ror = pd.read_json(f"{rutaDatos}v1.50-2024-07-29-ror-data.json")
 
 # %%
 ror['address'] = ror['addresses'].apply(lambda x: x[0])
@@ -367,7 +369,7 @@ with open(f"{curr_model_artifacts_location}countries_list_flat.pkl", "wb") as f:
 # Takes the old department list and updates it with additional department names.
 
 # %%
-with open("./ror_string_beginnings/Education_dept", 'r') as f:
+with open(f"{ruta}ror_string_beginnings/Education_dept", 'r') as f:
     education_dept_begs = f.readlines()
 
 education_dept_begs = list(set([x.rstrip('\n') for x in education_dept_begs]))
@@ -404,5 +406,5 @@ with open(f"{curr_model_artifacts_location}affiliation_vocab.pkl", "wb") as f:
 
 # %%
 
-
+print('FINALIZADO OK')
 
