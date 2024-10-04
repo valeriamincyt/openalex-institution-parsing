@@ -174,6 +174,7 @@ ror = pd.read_json(f"{rutaDatos}v1.50-2024-07-29-ror-data.json")
 ror['address'] = ror['addresses'].apply(lambda x: x[0])
 ror['ror_id'] = ror['id'].apply(lambda x: x.split("/")[-1])
 ror['types'] = ror['types'].apply(lambda x: x[0])
+ror['types'] = ror['types'].apply(lambda x: x[0] if len(x)>0 else "")
 
 # %%
 ror['country_code'] = ror['country'].apply(lambda x: x['country_code'])
