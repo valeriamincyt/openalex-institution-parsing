@@ -163,7 +163,8 @@ def list_of_all_names(oa_name, ror_names, extra_names, use_extra_names=False):
 # this file is not provided but the needed data is all institutions in OpenAlex
 # with the following columns: 'ror_id','affiliation_id','display_name'
 institutions_df = pd.read_parquet(f"{rutaDatos}OA_static_institutions_single_file.parquet")
-
+institutions_df['ror_id'] = institutions_df['ror_id'].apply(lambda x: x.split("/")[-1])
+institutions_df['affiliation_id'] = institutions_df['affiliation_id'].apply(lambda x: x.split("/")[-1])
 # %%
 # institutions = institutions_df.set_index('affiliation_id').to_dict(orient='index')
 
@@ -182,7 +183,7 @@ ror['country_name'] = ror['country'].apply(lambda x: x['country_name'])
 ror['city'] = ror['address'].apply(lambda x: x['city'])
 ror['state'] = ror['address'].apply(lambda x: x['state'])
 ror['region'] = ror['address'].apply(get_geoname_admin)
-
+ror['ror_id'] = ror['id'].apply(lambda x: x.split("/")[-1])
 # %%
 ror_to_join = ror[['ror_id','name','status','types','aliases','acronyms','labels','city',
                    'state','region','country_name']].copy()
@@ -293,13 +294,10 @@ successor_dict = to_add_to_successors.groupby('successor')['ror_id'].apply(list)
 inst_ror['extra_names'] = inst_ror['ror_id'].apply(get_extra_names)
 
 # %%
-inst_ror['exact_names'] = inst_ror.apply(lambda x: get_exact_names(x['name'], x.aliases, 
-                                                                         x.acronyms, x.labels), axis=1)
+inst_ror['exact_names'] = inst_ror.apply(lambda x: get_exact_names(x['name'], x.aliases, x.acronyms, x.labels), axis=1)
 
 # %%
-inst_ror['final_names'] = inst_ror.apply(lambda x: list_of_all_names(x.display_name, x.exact_names, 
-                                                                     x.extra_names, 
-                                                                     use_extra_names=False), axis=1)
+inst_ror['final_names'] = inst_ror.apply(lambda x: list_of_all_names(x.display_name, x.exact_names, x.extra_names, use_extra_names=False), axis=1)
 
 # %%
 new_affiliation_dict = inst_ror.set_index('affiliation_id')[['display_name','city','state',
