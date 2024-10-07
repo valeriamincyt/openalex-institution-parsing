@@ -207,10 +207,11 @@ multi_inst_names_df = ror_to_join[['ror_id','name']].merge(institutions_df[['ror
 ['name'].value_counts().reset_index()
 
 # %%
-multi_inst_names_df.head(10)
+print('multi_inst_names_df.head(10) ----------------------------------------------------------')
+print(multi_inst_names_df.head(10))
 
 # %%
-multi_inst_names = multi_inst_names_df[multi_inst_names_df['name']>1].iloc[:,0].tolist()
+multi_inst_names = multi_inst_names_df[multi_inst_names_df['count']>1].iloc[:,0].tolist()
 
 # %%
 multi_inst_names_ids = inst_ror[inst_ror['name'].isin(multi_inst_names)]['affiliation_id'].tolist()
