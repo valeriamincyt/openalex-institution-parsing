@@ -6,7 +6,7 @@ import json
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import os
+#import os
 
 # %%
 #from pyspark.sql import SparkSession
@@ -36,9 +36,9 @@ base_save_path = "./"
 iteration_save_path = "./institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
 
-os.chdir(base_save_path)
-os.getcwd()
-os.mkdir("institutional_affiliation_classification")
+#os.chdir(base_save_path)
+#os.getcwd()
+#os.mkdir("institutional_affiliation_classification")
 
 # %% [markdown]
 # ### Getting all data (From saved OpenAlex DB snapshot)
