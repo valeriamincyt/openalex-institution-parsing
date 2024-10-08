@@ -32,13 +32,13 @@ sqlContext = SQLContext(sc,spark)
 # %%
 # These paths should be changed to wherever you want to save the general data and where you want to save
 # iteration specific data
-base_save_path = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/002_Model/"
-iteration_save_path = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/002_Model/institutional_affiliation_classification/"
-rutaDatos = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/Datos/"
+base_save_path = "./"
+iteration_save_path = "./institutional_affiliation_classification/"
+rutaDatos = "../Datos/"
 
-#os.chdir(base_save_path)
-#os.getcwd()
-#os.mkdir("institutional_affiliation_classification")
+os.chdir(base_save_path)
+os.getcwd()
+os.mkdir("institutional_affiliation_classification")
 
 # %% [markdown]
 # ### Getting all data (From saved OpenAlex DB snapshot)
