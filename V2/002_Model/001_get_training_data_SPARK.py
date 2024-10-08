@@ -32,33 +32,27 @@ sqlContext = SQLContext(sc,spark)
 # %%
 # These paths should be changed to wherever you want to save the general data and where you want to save
 # iteration specific data
-base_save_path = "./"
-iteration_save_path = "./institutional_affiliation_classification/"
-rutaDatos = "../Datos/"
-os.mkdir("./institutional_affiliation_classification/")
+base_save_path = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/002_Model/"
+iteration_save_path = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/002_Model/institutional_affiliation_classification/"
+rutaDatos = "/content/drive/MyDrive/ProyectoRanking/openalex-institution-parsing/V2/Datos/"
+
+#os.chdir(base_save_path)
+#os.getcwd()
+#os.mkdir("institutional_affiliation_classification")
 
 # %% [markdown]
 # ### Getting all data (From saved OpenAlex DB snapshot)
 
 # %%
-institutions = spark.read.parquet(f"{rutaDatos}OA_static_institutions_single_file.parquet") \
+institutions = spark.read.parquet(f"{rutaDatos}OA_static_institutions_single_file2.parquet") \
     .filter(F.col('ror_id')!='')
-
-institutions['affiliation_id'] = institutions['affiliation_id'].apply(lambda x: x.split("/")[-1])
 
 # %%
 print('institutions.cache().count() --------------------------------------')
 print(institutions.cache().count())
 
 # %%
-df_affil = pd.read_csv(f"{rutaDatos}Insumos_M1/static_affiliations_santi.csv")
-#df_affil = df_affil.rename(columns={'affiliation_ids': 'affiliation_id'})
-df_affil.to_parquet(f"{rutaDatos}static_affiliations.parquet")
-print('Se crea el archivo static_affiliations.parquet con los datos de Insumos_M1/static_affiliations_santi.csv')
-
-# %%
 affiliations = spark.read.parquet(f"{rutaDatos}static_affiliations.parquet")
-affiliations['affiliation_id'] = affiliations['affiliation_id'].apply(lambda x: x.split("/")[-1])
 
 # %%
 print('affiliations.cache().count() --------------------------------------')
@@ -150,7 +144,7 @@ more_than.select('original_affiliation', 'affiliation_id') \
 
 # %%
 
-
+print('FINALIZADO OK')
 # %%
 
 

@@ -580,7 +580,7 @@ city_region_country = art_empty_affs.sample(1500).drop_duplicates()\
 pd.DataFrame(zip(city_country+city_region_country), 
              columns=['original_affiliation']) \
     .drop_duplicates(subset=['original_affiliation'])\
-    .to_parquet("artificial_empty_affs.parquet")
+    .to_parquet(f"{rutaDatos}/artificial_empty_affs.parquet")
 
 # %%
 ror_to_join_final = ror_to_join[['ror_id','aff_string']].explode("aff_string").copy()
