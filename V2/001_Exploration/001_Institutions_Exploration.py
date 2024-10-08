@@ -596,7 +596,7 @@ ror_to_join_final['original_affiliation'] = \
 # %%
 ror_to_join_final.merge(insts, how='inner', 
                         on='ror_id')[['original_affiliation','affiliation_id']] \
-.to_parquet("ror_strings.parquet")
+.to_parquet(f"{rutaDatos}/ror_strings.parquet")
 
 
 print('FINALIZADO OK')
