@@ -220,7 +220,7 @@ def create_tfrecords_dataset(data, iter_num, dataset_type='train'):
     
     serialized_features_dataset = ds.map(tf_serialize_example)
     
-    filename = f"./training_data/{dataset_type}/{str(iter_num).zfill(4)}.tfrecord"
+    filename = f"{base_save_path}training_data/{dataset_type}/{str(iter_num).zfill(4)}.tfrecord"
     writer = tf.data.experimental.TFRecordWriter(filename)
     writer.write(serialized_features_dataset)
 
@@ -262,8 +262,8 @@ val_data['original_affiliation_model_input'] = val_data['original_affiliation_mo
 .apply(lambda x: np.asarray(x, dtype=np.int64))
 
 # %%
-os.system("mkdir -p ./training_data/train/")
-os.system("mkdir -p ./training_data/val/")
+os.system(f"mkdir -p {base_save_path}training_data/train/")
+os.system(f"mkdir -p {base_save_path}training_data/val/")
 print("Done")
 
 # %% [markdown]

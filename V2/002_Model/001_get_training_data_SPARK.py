@@ -140,7 +140,7 @@ more_than.cache().count()
 
 # %%
 more_than.select('original_affiliation', 'affiliation_id') \
-.coalesce(1).write.mode('overwrite').parquet(f"{iteration_save_path}more_than_{num_samples_to_get}")
+.coalesce(1).write.mode('overwrite').parquet(f"{iteration_save_path}more_than_{num_samples_to_get}.parquet")
 
 # %%
 
