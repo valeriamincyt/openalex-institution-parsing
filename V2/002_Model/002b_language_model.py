@@ -47,7 +47,8 @@ print(len(affiliation_vocab))
 
 # %%
 # Loading the standard DistilBERT tokenizer
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
+#tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
+tokenizer = DistilBertTokenizer.from_pretrained(f"{rutaDatos}basic_model_tokenizer", return_tensors='tf')
 
 # %%
 # Using the HuggingFace library to load the dataset
