@@ -115,8 +115,9 @@ with strategy.scope():
     opt = Adam(learning_rate=lr_scheduler)
     
     # Loading the DistilBERT model and weights with a classification head
-    model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", 
-                                                                 num_labels=len(affiliation_vocab))
+    #model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
+    model = TFAutoModelForSequenceClassification.from_pretrained(f"{rutaDatos}basic_model_tokenizer", num_labels=len(affiliation_vocab))
+    
     model.compile(optimizer=opt)
 
 # %%
