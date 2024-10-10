@@ -23,6 +23,10 @@ from transformers import AutoModelForSequenceClassification, TrainingArguments, 
 base_save_path = "./"
 iteration_save_path = "./institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
+
+dense_1 = 2048
+dense_2 = 1024
+curr_date = datetime.now().strftime("%Y%m%d")
 filepath_1 = f"{base_save_path}models/{curr_date}_{dense_1}d1_{dense_2}d2/"
 
 # %% [markdown]
