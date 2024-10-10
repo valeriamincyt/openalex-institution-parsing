@@ -19,6 +19,8 @@ from transformers import DataCollatorWithPadding, TFDistilBertForSequenceClassif
 from transformers import TFRobertaForSequenceClassification, RobertaTokenizer
 from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 
+from datetime import datetime
+
 # %%
 base_save_path = "./"
 iteration_save_path = "./institutional_affiliation_classification/"
