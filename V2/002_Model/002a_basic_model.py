@@ -438,7 +438,7 @@ with mirrored_strategy.scope():
     
     curr_date = datetime.now().strftime("%Y%m%d")
 
-    filepath_1 = f"./models/{curr_date}_{dense_1}d1_{dense_2}d2/" \
+    filepath_1 = f"{base_save_path}models/{curr_date}_{dense_1}d1_{dense_2}d2/" \
 
 
     filepath = filepath_1 + "model_epoch{epoch:02d}ckpt"

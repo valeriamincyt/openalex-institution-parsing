@@ -23,6 +23,7 @@ from transformers import AutoModelForSequenceClassification, TrainingArguments, 
 base_save_path = "./"
 iteration_save_path = "./institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
+filepath_1 = f"{base_save_path}models/{curr_date}_{dense_1}d1_{dense_2}d2/"
 
 # %% [markdown]
 # ### Loading Affiliation Dictionary
@@ -49,7 +50,7 @@ print(len(affiliation_vocab))
 # Loading the standard DistilBERT tokenizer
 #tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
 
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert/distilbert-base-uncased", return_tensors='tf')
+tokenizer = DistilBertTokenizer.from_pretrained(filepath_1, return_tensors='tf')
 
 # %%
 # Using the HuggingFace library to load the dataset
@@ -117,7 +118,7 @@ with strategy.scope():
     
     # Loading the DistilBERT model and weights with a classification head
     #model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
-    model = TFAutoModelForSequenceClassification.from_pretrained("distilbert/distilbert-base-uncased", num_labels=len(affiliation_vocab))
+    model = TFAutoModelForSequenceClassification.from_pretrained(filepath_1, num_labels=len(affiliation_vocab))
     
     model.compile(optimizer=opt)
 
