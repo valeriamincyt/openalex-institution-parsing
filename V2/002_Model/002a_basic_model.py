@@ -371,6 +371,9 @@ validation_data = get_dataset(train_data_path, data_type='val')
 with open(f"{rutaDatos}affiliation_vocab.pkl","rb") as f:
     affiliation_vocab = pickle.load(f)
 
+print('len(affiliation_vocab) cuando se carga: ----------------------------------------------------------')
+print(len(affiliation_vocab))
+
 # %%
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
 
@@ -432,6 +435,8 @@ with mirrored_strategy.scope():
     dense_output = tf.keras.layers.LayerNormalization(epsilon=1e-6, name="layer_norm_2")(dense_output)
 
     # Last dense layer
+    print('len(affiliation_vocab): para crear la ultima capa ----------------------------------------------------------')
+    print(len(affiliation_vocab))
     final_output = tf.keras.layers.Dense(len(affiliation_vocab), activation='softmax', name='cls')(dense_output)
 
     model = tf.keras.Model(inputs=tokenized_aff_string_ids, outputs=final_output)
