@@ -1,4 +1,7 @@
 #002b_languaje_model
+#!pip install datasets
+#!pip install transformers==4.26.0
+#!pip install tensorflow==2.11.0
 
 # %%
 import pickle
@@ -122,6 +125,8 @@ with strategy.scope():
     
     # Loading the DistilBERT model and weights with a classification head
     model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
+    print('Tipo del modelo: -------------------------------------')
+    print(type(model))
     
     model.compile(optimizer=opt)
 
@@ -140,5 +145,3 @@ with open(f"{tf_save_directory}/vocab.pkl", "wb") as f:
 
 # %%
 print('FINALIZADO OK')
-
-
