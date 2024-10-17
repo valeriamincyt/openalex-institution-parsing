@@ -353,8 +353,8 @@ def get_dataset(path, data_type='train'):
     raw_dataset = tf.data.TFRecordDataset(tfrecords, num_parallel_reads=AUTO)
     parsed_dataset = raw_dataset.map(_parse_function, num_parallel_calls=AUTO)
 
-    #parsed_dataset = parsed_dataset.apply(tf.data.experimental.dense_to_ragged_batch(512,drop_remainder=True)) # deprecated
-    parsed_dataset = parsed_dataset.apply(tf.data.Dataset.ragged_batch(batch_size=512,drop_remainder=True))
+    parsed_dataset = parsed_dataset.apply(tf.data.experimental.dense_to_ragged_batch(512,drop_remainder=True)) # deprecated
+    #parsed_dataset = parsed_dataset.apply(tf.data.Dataset.ragged_batch(batch_size=512,drop_remainder=True))
     return parsed_dataset
 
 # %%
