@@ -1,3 +1,5 @@
+#002b_languaje_model
+
 # %%
 import pickle
 import json
@@ -19,10 +21,13 @@ from transformers import DataCollatorWithPadding, TFDistilBertForSequenceClassif
 from transformers import TFRobertaForSequenceClassification, RobertaTokenizer
 from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 
+print("TensorFlow version:", tf.__version__)
+
 # %%
 base_save_path = "./"
-iteration_save_path = "./institutional_affiliation_classification/"
+iteration_save_path = f"{base_save_path}institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
+curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
 
 filepath_model = f"{base_save_path}models/"
 
@@ -31,13 +36,13 @@ filepath_model = f"{base_save_path}models/"
 
 # %%
 # Loading the affiliation (target) vocab
-with open(f"{rutaDatos}affiliation_vocab.pkl","rb") as f:
+with open(f"{curr_model_artifacts_location}affiliation_vocab.pkl","rb") as f:
     affiliation_vocab = pickle.load(f)
     
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
 
 # %%
-with open(f"{rutaDatos}affiliation_vocab.pkl","wb") as f:
+with open(f"{curr_model_artifacts_location}affiliation_vocab.pkl","wb") as f:
     pickle.dump(affiliation_vocab, f)
 
 # %%
@@ -49,9 +54,7 @@ print(len(affiliation_vocab))
 
 # %%
 # Loading the standard DistilBERT tokenizer
-#tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
-#tokenizer = DistilBertTokenizer.from_pretrained(rutaDatos, return_tensors='tf')
+tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
 
 # %%
 # Using the HuggingFace library to load the dataset
@@ -118,9 +121,7 @@ with strategy.scope():
     opt = Adam(learning_rate=lr_scheduler)
     
     # Loading the DistilBERT model and weights with a classification head
-    #model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
-    model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased")
-    #model = TFAutoModelForSequenceClassification.from_pretrained(rutaDatos, num_labels=len(affiliation_vocab))
+    model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
     
     model.compile(optimizer=opt)
 

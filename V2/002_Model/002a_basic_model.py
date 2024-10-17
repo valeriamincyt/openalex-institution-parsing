@@ -1,3 +1,5 @@
+#002a_basic_model
+
 # %%
 import pickle
 import json
@@ -26,18 +28,19 @@ from tokenizers.trainers import WordPieceTrainer
 base_save_path = "./"
 iteration_save_path = "./institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
+num_samples_to_get =  50
 
 # %% [markdown]
 # ### Combining the training data from 001 notebook and artificial data
 
 # %%
-# All training samples that have less than 50 different version of the affiliation text
+# All training samples that have less than 50 ({num_samples_to_get}) different version of the affiliation text
 # ---- Created in previous notebook
-lower_than = pd.read_parquet(f"{iteration_save_path}lower_than_50.parquet")
+lower_than = pd.read_parquet(f"{iteration_save_path}lower_than_{num_samples_to_get}.parquet")
 
-# All training samples that have more than 50 different version of the affiliation text
+# All training samples that have more than 50 ({num_samples_to_get}) different version of the affiliation text
 # ---- Created in previous notebook
-more_than = pd.read_parquet(f"{iteration_save_path}more_than_50.parquet")
+more_than = pd.read_parquet(f"{iteration_save_path}more_than_{num_samples_to_get}.parquet")
 
 print('lower_than.shape: --------------------------------------')
 print(lower_than.shape)
@@ -73,7 +76,8 @@ full_affs_data['affiliation_id'] = full_affs_data['affiliation_id'].astype('str'
 full_affs_data['processed_text'] = full_affs_data['original_affiliation'].apply(unidecode.unidecode)
 
 # %%
-train_data, val_data = train_test_split(full_affs_data, train_size=0.985, random_state=1)
+#train_data, val_data = train_test_split(full_affs_data, train_size=0.985, random_state=1)
+train_data, val_data = train_test_split(full_affs_data, train_size=0.7, random_state=1)
 train_data = train_data.reset_index(drop=True).copy()
 val_data = val_data.reset_index(drop=True).copy()
 
@@ -282,7 +286,7 @@ print("Done")
 start_cpu_time = time.process_time()
 start_wall_time = time.time()
 for i in range(ceil(train_data.shape[0]/1000)): #500.000
-    print(i)
+    print(f"Creando registro {i} de train_data")
     low = i*1000
     high = (i+1)*1000
     create_tfrecords_dataset(train_data.iloc[low:high,:], i, 'train')
@@ -308,7 +312,7 @@ print(f"Elapsed time: {(end_wall_time - start_wall_time)*1000}  μs")
 start_cpu_time = time.process_time()
 start_wall_time = time.time()
 for i in range(ceil(val_data.shape[0]/3000)):
-    print(i)
+    print(f"Creando registro {i} de val_data")
     low = i*3000
     high = (i+1)*3000
     create_tfrecords_dataset(val_data.iloc[low:high,:], i, 'val')
@@ -349,11 +353,12 @@ def get_dataset(path, data_type='train'):
     raw_dataset = tf.data.TFRecordDataset(tfrecords, num_parallel_reads=AUTO)
     parsed_dataset = raw_dataset.map(_parse_function, num_parallel_calls=AUTO)
 
-    parsed_dataset = parsed_dataset.apply(tf.data.experimental.dense_to_ragged_batch(512,drop_remainder=True))
+    #parsed_dataset = parsed_dataset.apply(tf.data.experimental.dense_to_ragged_batch(512,drop_remainder=True)) # deprecated
+    parsed_dataset = parsed_dataset.apply(tf.data.Dataset.ragged_batch(batch_size=512,drop_remainder=True))
     return parsed_dataset
 
 # %%
-train_data_path = "./training_data/"
+train_data_path = f"{base_save_path}training_data/"
 AUTO = tf.data.experimental.AUTOTUNE
 training_data = get_dataset(train_data_path, data_type='train')
 validation_data = get_dataset(train_data_path, data_type='val')
@@ -405,7 +410,7 @@ with mirrored_strategy.scope():
     tokenized_aff_string_ids = tf.keras.layers.Input((128,), dtype=tf.int64, name='tokenized_aff_string_input')
 
     # Embedding Layers
-    tokenized_aff_string_emb_layer = tf.keras.layers.Embedding(input_dim=3816, 
+    tokenized_aff_string_emb_layer = tf.keras.layers.Embedding(input_dim=330, #3816
                                                                output_dim=int(emb_size), 
                                                                mask_zero=True, 
                                                                trainable=True,
@@ -441,7 +446,7 @@ with mirrored_strategy.scope():
     filepath_1 = f"{base_save_path}models/{curr_date}_{dense_1}d1_{dense_2}d2/" \
 
 
-    filepath = filepath_1 + "model_epoch{epoch:02d}ckpt"
+    filepath = filepath_1 + "model_epoch{epoch:02d}ckpt.keras"
 
     # Adding in checkpointing
     model_checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath, monitor='val_loss', 

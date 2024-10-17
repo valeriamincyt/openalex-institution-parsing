@@ -1,3 +1,8 @@
+#002_Making_Model_Files
+#!pip install pip --upgrade
+#!pip install unidecode
+#!pip install langdetect
+
 # %%
 import pickle
 import json
@@ -26,7 +31,7 @@ from random import sample
 # location where current files are located
 ruta = "./"
 rutaDatos ="../Datos/"
-curr_model_artifacts_location = "../Datos/institution_tagger_v2_artifacts/"
+curr_model_artifacts_location = f"{rutaDatos}/institution_tagger_v2_artifacts/"
 
 # Load the needed files
 with open(f"{curr_model_artifacts_location}departments_list.pkl", "rb") as f:

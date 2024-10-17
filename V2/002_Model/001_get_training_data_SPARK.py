@@ -1,3 +1,9 @@
+# 001_get_training_data_SPARK
+#!pip install pip --upgrade
+#!pip install boto3
+#!pip install matplotlib
+#!pip install pyspark
+
 # %%
 import pickle
 import boto3
