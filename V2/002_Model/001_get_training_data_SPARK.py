@@ -12,7 +12,7 @@ import json
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-#import os
+import os
 
 # %%
 #from pyspark.sql import SparkSession
@@ -39,12 +39,11 @@ sqlContext = SQLContext(sc,spark)
 # These paths should be changed to wherever you want to save the general data and where you want to save
 # iteration specific data
 base_save_path = "./"
-iteration_save_path = "./institutional_affiliation_classification/"
+iteration_save_path = f"{base_save_path}institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
 
-#os.chdir(base_save_path)
-#os.getcwd()
-#os.mkdir("institutional_affiliation_classification")
+os.system(f"mkdir -p {base_save_path}institutional_affiliation_classification/")
+print("Done")
 
 # %% [markdown]
 # ### Getting all data (From saved OpenAlex DB snapshot)
