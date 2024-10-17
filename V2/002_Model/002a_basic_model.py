@@ -406,7 +406,8 @@ def scheduler(epoch, curr_lr):
 
 # %%
 # Allow for use of multiple GPUs
-mirrored_strategy = tf.distribute.MirroredStrategy()
+#mirrored_strategy = tf.distribute.MirroredStrategy()
+mirrored_strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
 
 with mirrored_strategy.scope():
     # Model Inputs
