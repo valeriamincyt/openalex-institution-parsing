@@ -478,7 +478,12 @@ model.summary()
 # ### Training the Model
 
 # %%
-history = model.fit(training_data, epochs=20, validation_data=validation_data, verbose=1, callbacks=callbacks)
+print('training_data.shape: -----------------------------------')
+print(training_data.shape)
+print('training_data.shape: -----------------------------------')
+print(training_data.shape)
+
+history = model.fit(x=training_data, epochs=20, validation_data=validation_data, verbose=1, callbacks=callbacks)
 
 # %%
 json.dump(str(history.history), open(f"{filepath_1}_25EPOCHS_HISTORY.json", 'w+'))
