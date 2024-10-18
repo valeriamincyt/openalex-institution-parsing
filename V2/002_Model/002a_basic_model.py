@@ -406,8 +406,8 @@ def scheduler(epoch, curr_lr):
 
 # %%
 # Allow for use of multiple GPUs
-#mirrored_strategy = tf.distribute.MirroredStrategy()
-mirrored_strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
+mirrored_strategy = tf.distribute.MirroredStrategy()
+#mirrored_strategy = tf.distribute.MirroredStrategy(["GPU:0", "GPU:1"])
 
 with mirrored_strategy.scope():
     # Model Inputs
@@ -478,10 +478,10 @@ model.summary()
 # ### Training the Model
 
 # %%
-print('training_data.shape: -----------------------------------')
-print(training_data.shape)
-print('training_data.shape: -----------------------------------')
-print(training_data.shape)
+#print('training_data.shape: -----------------------------------')
+#print(training_data.shape)
+#print('training_data.shape: -----------------------------------')
+#print(training_data.shape)
 
 history = model.fit(x=training_data, epochs=20, validation_data=validation_data, verbose=1, callbacks=callbacks)
 
