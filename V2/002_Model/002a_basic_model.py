@@ -414,7 +414,7 @@ with mirrored_strategy.scope():
     tokenized_aff_string_ids = tf.keras.layers.Input((128,), dtype=tf.int64, name='tokenized_aff_string_input')
 
     # Embedding Layers
-    tokenized_aff_string_emb_layer = tf.keras.layers.Embedding(input_dim=381, #3816
+    tokenized_aff_string_emb_layer = tf.keras.layers.Embedding(input_dim=3816, #3816
                                                                output_dim=int(emb_size), 
                                                                mask_zero=True, 
                                                                trainable=True,
