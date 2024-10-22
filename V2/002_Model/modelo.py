@@ -2,6 +2,9 @@ from transformers import DistilBertTokenizer, TFDistilBertModel
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.optimizers.schedules import PolynomialDecay
 
+import os
+os.environ['TF_ENABLE_MLIR_OPTIMIZATIONS'] = '1'
+
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 model = TFDistilBertModel.from_pretrained("distilbert-base-uncased")
 text = "Replace me by any text you'd like."
