@@ -57,7 +57,8 @@ print(len(affiliation_vocab))
 
 # %%
 # Loading the standard DistilBERT tokenizer
-tokenizer = DistilBertTokenizer.from_pretrained("./distilbert-local", return_tensors='tf')
+#tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf') # esto no funciona en el server de Sinctys
+tokenizer = DistilBertTokenizer.from_pretrained("./distilbert-local", return_tensors='tf') # Baje los archivos del modelo (modelo.py) en otra maquina y luego subi la carpeta al server de Sinctys
 print("TOKEN CREADO  OBJETO DE TYPE: ----------------------------------")
 print(type(tokenizer))
 
@@ -92,8 +93,8 @@ tokenized_val_data.cleanup_cache_files()
 
 # %%
 # Hyperparameters to tune
-batch_size = 512
-num_epochs = 15
+batch_size = 64 #512
+num_epochs = 10 #15
 batches_per_epoch = len(tokenized_train_data["train"]) // batch_size
 total_train_steps = int(batches_per_epoch * num_epochs)
 
