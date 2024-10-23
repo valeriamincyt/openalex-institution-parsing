@@ -57,7 +57,9 @@ print(len(affiliation_vocab))
 
 # %%
 # Loading the standard DistilBERT tokenizer
-tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
+tokenizer = DistilBertTokenizer.from_pretrained("./distilbert-local", return_tensors='tf')
+print("TOKEN CREADO  OBJETO DE TYPE: ----------------------------------")
+print(type(tokenizer))
 
 # %%
 # Using the HuggingFace library to load the dataset
@@ -124,7 +126,7 @@ with strategy.scope():
     opt = Adam(learning_rate=lr_scheduler)
     
     # Loading the DistilBERT model and weights with a classification head
-    model = TFAutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=len(affiliation_vocab))
+    model = TFAutoModelForSequenceClassification.from_pretrained("./distilbert-local", num_labels=len(affiliation_vocab))
     print('Tipo del modelo: -------------------------------------')
     print(type(model))
     
