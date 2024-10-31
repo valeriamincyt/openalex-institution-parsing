@@ -32,7 +32,7 @@ iteration_save_path = f"{base_save_path}institutional_affiliation_classification
 rutaDatos = "../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
 
-filepath_model = f"{base_save_path}models/"
+#filepath_model = f"{base_save_path}models/"
 
 # %% [markdown]
 # ### Loading Affiliation Dictionary
@@ -58,7 +58,8 @@ print(len(affiliation_vocab))
 # %%
 # Loading the standard DistilBERT tokenizer
 #tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf') # esto no funciona en el server de Sinctys
-tokenizer = DistilBertTokenizer.from_pretrained("./distilbert-local", return_tensors='tf') # Baje los archivos del modelo (modelo.py) en otra maquina y luego subi la carpeta al server de Sinctys
+#tokenizer = DistilBertTokenizer.from_pretrained(f"{base_save_path}distilbert-local", return_tensors='tf') # Baje los archivos del modelo (modelo.py) en otra maquina y luego subi la carpeta al server de Sinctys
+tokenizer = DistilBertTokenizer.from_pretrained(f"{curr_model_artifacts_location}language_model/", return_tensors='tf')
 print("TOKEN CREADO  OBJETO DE TYPE: ----------------------------------")
 print(type(tokenizer))
 
@@ -127,7 +128,8 @@ with strategy.scope():
     opt = Adam(learning_rate=lr_scheduler)
     
     # Loading the DistilBERT model and weights with a classification head
-    model = TFAutoModelForSequenceClassification.from_pretrained("./distilbert-local", num_labels=len(affiliation_vocab))
+    #model = TFAutoModelForSequenceClassification.from_pretrained(f"{base_save_path}distilbert-local", num_labels=len(affiliation_vocab))
+    model = TFAutoModelForSequenceClassification.from_pretrained(f"{curr_model_artifacts_location}language_model/", num_labels=len(affiliation_vocab))
     print('Tipo del modelo: -------------------------------------')
     print(type(model))
     
