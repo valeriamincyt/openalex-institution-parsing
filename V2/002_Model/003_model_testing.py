@@ -231,8 +231,10 @@ def get_final_basic_or_language_model_pred(scores, labels, countries, vocab, inv
     to see if the country found in the string can be matched to the country of the
     predicted institution.
     """
-    mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores) if i!=vocab[-1]]
-    scores = [j for i,j in zip(labels,scores) if i!=vocab[-1]]
+    #mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores) if i!=vocab[-1]]
+    mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores)]
+    #scores = [j for i,j in zip(labels,scores) if i!=vocab[-1]]
+    scores = [j for i,j in zip(labels,scores)]
     final_pred = mapped_labels[0]
     final_score = scores[0]
     if not full_affiliation_dict[mapped_labels[0]]['country']:

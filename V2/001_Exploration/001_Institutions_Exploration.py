@@ -23,8 +23,8 @@ from langdetect import detect
 from random import sample
 
 # %%
-rutaModulo = './'
-rutaDatos = '../Datos/'
+base_save_path = "./"
+rutaDatos = "../Datos/"
 
 # %% [markdown]
 # ## Exploring the ROR Data to Create Artificial Training Data
@@ -32,7 +32,7 @@ rutaDatos = '../Datos/'
 # %%
 # Data was downloaded from the ROR website for the date seen in the file string below
 # -------> https://ror.readme.io/docs/data-dump
-ror = pd.read_json(f'{rutaDatos}v1.50-2024-07-29-ror-data.json')
+ror = pd.read_json(f'{rutaDatos}v1.55-2024-10-31-ror-data.json')
 
 # %%
 ror['alias_len'] = ror['aliases'].apply(len)
@@ -45,7 +45,8 @@ ror['ror_id'] = ror['id'].apply(lambda x: x.split("/")[-1])
 ror['types'] = ror['types'].apply(lambda x: x[0] if len(x)>0 else "")
 
 # %%
-ror[ror['ror_id']=='05kxf7578']
+print('Institucion del archivo v1.... -------------------------------------')
+print(ror[ror['ror_id']=='05kxf7578'])
 
 # %%
 # this file is not provided but the needed data is all institutions in OpenAlex
@@ -53,10 +54,10 @@ ror[ror['ror_id']=='05kxf7578']
 insts = pd.read_parquet(f'{rutaDatos}OA_static_institutions_single_file.parquet', columns=['affiliation_id','ror_id'])
 
 # %%
-insts['ror_id'] = insts['ror_id'].apply(lambda x: x.split("/")[-1])
-insts['affiliation_id'] = insts['affiliation_id'].apply(lambda x: x.split("/")[-1])
-print("insts.sample() -------------------------------------------")
-insts.sample()
+#insts['ror_id'] = insts['ror_id'].apply(lambda x: x.split("/")[-1])
+#insts['affiliation_id'] = insts['affiliation_id'].apply(lambda x: x.split("/")[-1])
+print("insts.sample(4) -------------------------------------------")
+insts.sample(4)
 
 # %%
 ror_to_join = ror[['ror_id','name','aliases','acronyms','labels','country','types',
@@ -102,31 +103,31 @@ labels[~labels['iso639'].isin(codes_to_ignore)].sample(20)
 # Looking to introduce more variety into the artificial strings so that they include some header information such as "College of .." or "Department of...".
 
 # %%
-with open(f"{rutaModulo}ror_string_beginnings/Company", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Company", 'r') as f:
     company_begs = f.readlines()
 
 company_begs = list(set([x.rstrip('\n') for x in company_begs]))
 
 # %%
-with open(f"{rutaModulo}ror_string_beginnings/Education_dept", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Education_dept", 'r') as f:
     education_dept_begs = f.readlines()
 
 education_dept_begs = list(set([x.rstrip('\n') for x in education_dept_begs]))
 
 # %%
-with open(f"{rutaModulo}ror_string_beginnings/Education_college", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Education_college", 'r') as f:
     education_col_begs = f.readlines()
 
 education_col_begs = list(set([x.rstrip('\n') for x in education_col_begs]))
 
 # %%
-with open(f"{rutaModulo}ror_string_beginnings/Education_school", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Education_school", 'r') as f:
     education_school_begs = f.readlines()
 
 education_school_begs = list(set([x.rstrip('\n') for x in education_school_begs]))
 
 # %%
-with open(f"{rutaModulo}ror_string_beginnings/Healthcare", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Healthcare", 'r') as f:
     healthcare_begs = f.readlines()
 
 healthcare_begs = list(set([x.rstrip('\n') for x in healthcare_begs]))

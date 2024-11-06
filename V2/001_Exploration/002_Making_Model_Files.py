@@ -29,7 +29,7 @@ from random import sample
 
 # %%
 # location where current files are located
-ruta = "./"
+base_save_path = "./"
 rutaDatos ="../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}/institution_tagger_v2_artifacts/"
 
@@ -374,7 +374,7 @@ with open(f"{curr_model_artifacts_location}countries_list_flat.pkl", "wb") as f:
 # Takes the old department list and updates it with additional department names.
 
 # %%
-with open(f"{ruta}ror_string_beginnings/Education_dept", 'r') as f:
+with open(f"{base_save_path}ror_string_beginnings/Education_dept", 'r') as f:
     education_dept_begs = f.readlines()
 
 education_dept_begs = list(set([x.rstrip('\n') for x in education_dept_begs]))

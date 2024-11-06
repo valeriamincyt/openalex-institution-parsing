@@ -5,6 +5,8 @@
 *V2/001_Exploration/artificial_empty_affs.parquet
 *V2/001_Exploration/ror_strings.parquet
 *V2/001_Exploration/__pycache__/
+*V2/001_Exploration/obtencion_de_datos.py
+*V2/001_Exploration/obtencion_de_datos.ipynb
 *V2/test.ipynb
 *V2/testing/
 *V2/virtual310-env
