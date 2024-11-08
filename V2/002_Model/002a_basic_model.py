@@ -26,7 +26,7 @@ from tokenizers.trainers import WordPieceTrainer
 
 # %%
 base_save_path = "./"
-iteration_save_path = "./institutional_affiliation_classification/"
+iteration_save_path = f"{base_save_path}institutional_affiliation_classification/"
 rutaDatos = "../Datos/"
 num_samples_to_get =  50
 
@@ -52,7 +52,7 @@ full_affs_data = pd.concat([more_than, lower_than],
                            axis=0).reset_index(drop=True)
 
 # %%
-full_affs_data.to_parquet(f"{rutaDatos}full_affs_data.parquet")
+full_affs_data.to_parquet(f"{base_save_path}full_affs_data.parquet")
 
 # %%
 full_affs_data.shape
@@ -91,28 +91,34 @@ val_data.shape
 affs_list_train = train_data['processed_text'].tolist()
 affs_list_val = val_data['processed_text'].tolist()
 
+print('train and validation data -------------------------------------')
+print('train:')
+print(affs_list_train[0:5])
+print('val:')
+print(affs_list_val[0:5])
+
 # %%
 try:
-    os.system(f"rm {rutaDatos}aff_text.txt")
+    os.system(f"rm {base_save_path}aff_text.txt")
     print("Done")
 except:
     pass
 
 # %%
 # save the affiliation text that will be used to train a tokenizer
-with open(f"{rutaDatos}aff_text.txt", "w") as f:
+with open(f"{base_save_path}aff_text.txt", "w") as f:
     for aff in affs_list_train:
         f.write(f"{aff}\n")
 
 # %%
 try:
-    os.system(f"rm {rutaDatos}basic_model_tokenizer")
+    os.system(f"rm {base_save_path}basic_model_tokenizer")
     print("Done")
 except:
     pass
 
 # %%
-full_affs_data[['processed_text','affiliation_id']].to_parquet(f"{rutaDatos}full_affs_data_processed.parquet")
+full_affs_data[['processed_text','affiliation_id']].to_parquet(f"{base_save_path}full_affs_data_processed.parquet")
 
 # %% [markdown]
 # ### Creating the tokenizer for the basic model
@@ -128,10 +134,10 @@ wordpiece_tokenizer.pre_tokenizer = Whitespace()
 
 # Training a tokenizer on the training dataset
 trainer = WordPieceTrainer(vocab_size=3816, special_tokens=["[UNK]"])
-files = [f"{rutaDatos}aff_text.txt"]
+files = [f"{base_save_path}aff_text.txt"]
 wordpiece_tokenizer.train(files, trainer)
 
-wordpiece_tokenizer.save(f"{rutaDatos}basic_model_tokenizer")
+wordpiece_tokenizer.save(f"{base_save_path}basic_model_tokenizer")
 
 # %% [markdown]
 # ### Further processing of data with tokenizer
@@ -158,6 +164,8 @@ def create_affiliation_vocab(x):
 # %%
 # initializing an empty affiliation vocab
 affiliation_vocab = {}
+#Vale: agregamos clave -1
+affiliation_vocab[-1]= 0
 
 # tokenizing the training dataset
 tokenized_output = []
@@ -184,33 +192,34 @@ val_data['original_affiliation_model_input'] = val_data['original_affiliation_to
 train_data['label'] = train_data['affiliation_id'].apply(lambda x: create_affiliation_vocab(x))
 
 # %%
-print('len(affiliation_vocab): ------------------------------')
+print('affiliation_vocab -----------------------------------')
 print(len(affiliation_vocab))
+print(list(affiliation_vocab.items())[:5])
 
 # %%
 val_data['label'] = val_data['affiliation_id'].apply(lambda x: [affiliation_vocab.get(x)])
 
 # %%
-train_data.to_parquet(f"{rutaDatos}train_data.parquet")
-val_data.to_parquet(f"{rutaDatos}val_data.parquet")
-
+train_data.to_parquet(f"{base_save_path}train_data.parquet")
+val_data.to_parquet(f"{base_save_path}val_data.parquet")
+print('Archivos de train and val creados ----------------------------------------')
 # %%
 # saving the affiliation vocab
-with open(f"{rutaDatos}affiliation_vocab.pkl","wb") as f:
+with open(f"{base_save_path}affiliation_vocab.pkl","wb") as f:
     pickle.dump(affiliation_vocab, f)
 
 # %% [markdown]
 # ### Creating TFRecords from the training and validation datasets
 
 # %%
-train_data = pd.read_parquet(f"{rutaDatos}train_data.parquet")
+train_data = pd.read_parquet(f"{base_save_path}train_data.parquet")
 
 # %%
-val_data = pd.read_parquet(f"{rutaDatos}val_data.parquet")
+val_data = pd.read_parquet(f"{base_save_path}val_data.parquet")
 
 # %%
 # saving the affiliation vocab
-with open(f"{rutaDatos}affiliation_vocab.pkl","rb") as f:
+with open(f"{base_save_path}affiliation_vocab.pkl","rb") as f:
     affiliation_vocab = pickle.load(f)
 
 # %%
@@ -368,7 +377,7 @@ validation_data = get_dataset(train_data_path, data_type='val')
 
 # %%
 # Loading the affiliation (target) vocab
-with open(f"{rutaDatos}affiliation_vocab.pkl","rb") as f:
+with open(f"{base_save_path}affiliation_vocab.pkl","rb") as f:
     affiliation_vocab = pickle.load(f)
 
 print('len(affiliation_vocab) cuando se carga: ----------------------------------------------------------')
@@ -488,8 +497,11 @@ history = model.fit(x=training_data, epochs=20, validation_data=validation_data,
 # %%
 json.dump(str(history.history), open(f"{filepath_1}_25EPOCHS_HISTORY.json", 'w+'))
 
-model.save(f"{base_save_path}002a_basic_model")
-model.save(f"{base_save_path}002a_basic_model.h5")
+#model.save(f"{base_save_path}002a_basic_model")
+#model.save(f"{base_save_path}002a_basic_model.h5")
+model.export(f"{base_save_path}002_basic_model_resultado")
+             
+
 
 # %%
 print('FINALIZADO OK')

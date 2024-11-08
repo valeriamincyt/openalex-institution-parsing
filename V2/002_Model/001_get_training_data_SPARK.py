@@ -49,7 +49,7 @@ print("Done")
 # ### Getting all data (From saved OpenAlex DB snapshot)
 
 # %%
-institutions = spark.read.parquet(f"{rutaDatos}OA_static_institutions_single_file2.parquet") \
+institutions = spark.read.parquet(f"{rutaDatos}OA_static_institutions_single_file.parquet") \
     .filter(F.col('ror_id')!='')
 
 # %%

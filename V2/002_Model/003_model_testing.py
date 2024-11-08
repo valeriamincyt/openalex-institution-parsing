@@ -56,7 +56,7 @@ with open(os.path.join(curr_model_artifacts_location, "city_country_list.pkl"), 
 
 print("Loaded strings of city/country combinations")
 
-with open(os.path.join(curr_model_artifacts_location, "affiliation_vocab.pkl"), "rb") as f:
+with open(os.path.join(base_save_path, "affiliation_vocab.pkl"), "rb") as f:
     affiliation_vocab = pickle.load(f)
     
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
@@ -72,7 +72,7 @@ data_collator = DataCollatorWithPadding(tokenizer=language_tokenizer,
                                         return_tensors='tf')
 
 #f"{rutaDatos}
-basic_tokenizer = PreTrainedTokenizerFast(tokenizer_file=os.path.join(f"{curr_model_artifacts_location}", "basic_model_tokenizer"))
+basic_tokenizer = PreTrainedTokenizerFast(tokenizer_file=os.path.join(curr_model_artifacts_location, "basic_model_tokenizer"))
 
 # Load the models
 #language_model = TFAutoModelForSequenceClassification.from_pretrained(os.path.join(model_path, "language_model"))

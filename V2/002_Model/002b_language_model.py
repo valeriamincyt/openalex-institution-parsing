@@ -9,6 +9,7 @@ import json
 import pandas as pd
 pd.set_option("display.max_colwidth", None)
 import numpy as np
+import os
 
 from collections import Counter
 from math import ceil
@@ -32,20 +33,21 @@ iteration_save_path = f"{base_save_path}institutional_affiliation_classification
 rutaDatos = "../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
 
-#filepath_model = f"{base_save_path}models/"
-
 # %% [markdown]
 # ### Loading Affiliation Dictionary
 
 # %%
 # Loading the affiliation (target) vocab
-with open(f"{curr_model_artifacts_location}affiliation_vocab.pkl","rb") as f:
+with open(f"{base_save_path}affiliation_vocab.pkl","rb") as f:
     affiliation_vocab = pickle.load(f)
-    
+
+print('Contenido de affiliation_vocab.pkl --------------------------------')
+print(list(affiliation_vocab.items())[:5])
+
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
 
 # %%
-with open(f"{curr_model_artifacts_location}affiliation_vocab.pkl","wb") as f:
+with open(f"{base_save_path}affiliation_vocab.pkl","wb") as f:
     pickle.dump(affiliation_vocab, f)
 
 # %%
