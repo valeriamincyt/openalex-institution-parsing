@@ -57,7 +57,7 @@ insts = pd.read_parquet(f'{rutaDatos}OA_static_institutions_single_file.parquet'
 #insts['ror_id'] = insts['ror_id'].apply(lambda x: x.split("/")[-1])
 #insts['affiliation_id'] = insts['affiliation_id'].apply(lambda x: x.split("/")[-1])
 print("insts.sample(4) -------------------------------------------")
-insts.sample(4)
+print(insts.sample(4))
 
 # %%
 ror_to_join = ror[['ror_id','name','aliases','acronyms','labels','country','types',

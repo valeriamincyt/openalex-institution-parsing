@@ -174,7 +174,7 @@ institutions_df['affiliation_id'] = institutions_df['affiliation_id'].apply(lamb
 # institutions = institutions_df.set_index('affiliation_id').to_dict(orient='index')
 
 # %%
-ror = pd.read_json(f"{rutaDatos}v1.50-2024-07-29-ror-data.json")
+ror = pd.read_json(f"{rutaDatos}v1.55-2024-10-31-ror-data.json")
 
 # %%
 ror['address'] = ror['addresses'].apply(lambda x: x[0])
