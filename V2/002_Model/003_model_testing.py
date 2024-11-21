@@ -231,9 +231,9 @@ def get_final_basic_or_language_model_pred(scores, labels, countries, vocab, inv
     to see if the country found in the string can be matched to the country of the
     predicted institution.
     """
-    #mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores) if i!=vocab[-1]]
+    mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores) if i!=vocab[-1]]
     mapped_labels = [inv_vocab[i] for i,j in zip(labels,scores)]
-    #scores = [j for i,j in zip(labels,scores) if i!=vocab[-1]]
+    scores = [j for i,j in zip(labels,scores) if i!=vocab[-1]]
     scores = [j for i,j in zip(labels,scores)]
     final_pred = mapped_labels[0]
     final_score = scores[0]
@@ -306,8 +306,9 @@ def get_final_prediction(basic_pred_score, lang_pred_score, countries, raw_sente
     pred_lang, score_lang, mapped_lang = lang_pred_score
     pred_basic, score_basic, mapped_basic = basic_pred_score
     
-#     print(f"lang: {pred_lang} - {score_lang}")
-#     print(f"basic: {pred_basic} - {score_basic}")
+    print('Individual preds and scores for both models: -----------------------------')
+    print(f"lang: {pred_lang} - {score_lang}")
+    print(f"basic: {pred_basic} - {score_basic}")
     
     # Logic for combining the two models
     
@@ -349,29 +350,31 @@ def get_final_prediction(basic_pred_score, lang_pred_score, countries, raw_sente
     
     matched_preds = []
     matched_strings = []
-#     print(f"RAW: {raw_sentence}")
-#     print(f"CLEAN: {decoded_affiliation_string}")
-#     print(f"COUNTRIES: {countries}")
+    print('raw_sentence, decoded_affiliation_string, countries: -----------------------------')
+    print(f"RAW: {raw_sentence}")
+    print(f"CLEAN: {decoded_affiliation_string}")
+    print(f"COUNTRIES: {countries}")
+
     for inst_id, match_strings in zip(all_mapped, all_mapped_strings):
-#         print(f"------{full_affiliation_dict[inst_id]['display_name']} - {inst_id}")
+        print(f"------{full_affiliation_dict[inst_id]['display_name']} - {inst_id}")
         if inst_id not in final_preds:
             for match_string in match_strings:
-#                 print(f"------{match_string} ({full_affiliation_dict[inst_id]['display_name']} - {inst_id})")
+                print(f"------{match_string} ({full_affiliation_dict[inst_id]['display_name']} - {inst_id})")
                 if match_string in decoded_affiliation_string:
-#                     print("FOUND A MATCH")
+                    print("FOUND A MATCH")
                     if not full_affiliation_dict[inst_id]['country']:
-#                         print("######match (no country_dict for aff ID)")
+                        print("######match (no country_dict for aff ID)")
                         matched_preds.append(inst_id)
                         matched_strings.append(match_string)
                     elif not countries:
-#                         print("######match (no country in string)")
+                        print("######match (no country in string)")
                         if inst_id not in multi_inst_names_ids:
                             matched_preds.append(inst_id)
                             matched_strings.append(match_string)
                         else:
                             pass
                     elif full_affiliation_dict[inst_id]['country'] in countries:
-#                         print("######match (country matches string)")
+                        print("######match (country matches string)")
                         matched_preds.append(inst_id)
                         matched_strings.append(match_string)
                     else:
@@ -699,6 +702,9 @@ start_wall_time = time.time()
 all_preds = raw_data_to_predictions(all_data, lang_thresh=0.99, basic_thresh=0.99)\
     .merge(all_data[['paper_id','affiliation_string','labels','dataset']])
 
+print('all_preds: -------------------------------------')
+print(all_preds.head(2))
+
 all_preds['preds_name'] = all_preds['affiliation_id'].apply(lambda x: get_preds_display_names(x))
 
 all_preds['preds_model_and_string_matching'] = all_preds['affiliation_id'] \
@@ -731,6 +737,11 @@ end_cpu_time = time.process_time()
 end_wall_time = time.time()
 print(f"CPU time used: {end_cpu_time - start_cpu_time} seconds")
 print(f"Elapsed time: {(end_wall_time - start_wall_time)*1000}  μs")
+
+print('all_preds final: -------------------------------------')
+print(all_preds.head(10))
+
+all_preds.to_csv(f'{base_save_path}all_preds.csv', index=False)
 
 # %%
 

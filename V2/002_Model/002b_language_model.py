@@ -147,6 +147,7 @@ tf_save_directory = f"{base_save_path}all_strings_language_model_15epochs"
 # Saving the model, tokenizer, and affiliation (target) vocab
 tokenizer.save_pretrained(tf_save_directory)
 model.save_pretrained(tf_save_directory)
+
 with open(f"{tf_save_directory}/vocab.pkl", "wb") as f:
     pickle.dump(affiliation_vocab, f)
 
