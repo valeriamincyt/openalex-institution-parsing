@@ -497,9 +497,9 @@ history = model.fit(x=training_data, epochs=20, validation_data=validation_data,
 # %%
 json.dump(str(history.history), open(f"{filepath_1}_25EPOCHS_HISTORY.json", 'w+'))
 
-#model.save(f"{base_save_path}002a_basic_model")
-#model.save(f"{base_save_path}002a_basic_model.h5")
-model.export(f"{base_save_path}002_basic_model_resultado")
+model.save(f"{base_save_path}002a_basic_model")
+model.save(f"{base_save_path}002a_basic_model.h5")
+#model.export(f"{base_save_path}002_basic_model_resultado")
              
 
 

@@ -67,8 +67,8 @@ print(type(tokenizer))
 
 # %%
 # Using the HuggingFace library to load the dataset
-train_dataset = load_dataset("parquet", data_files={'train': f'{rutaDatos}train_data.parquet'})
-val_dataset = load_dataset("parquet", data_files={'val': f'{rutaDatos}val_data.parquet'})
+train_dataset = load_dataset("parquet", data_files={'train': f'{base_save_path}train_data.parquet'})
+val_dataset = load_dataset("parquet", data_files={'val': f'{base_save_path}val_data.parquet'})
 
 # %%
 MAX_LEN = 256
