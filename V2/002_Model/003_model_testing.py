@@ -60,7 +60,7 @@ with open(os.path.join(base_save_path, "affiliation_vocab.pkl"), "rb") as f:
     affiliation_vocab = pickle.load(f)
 
 print('affiliation_vocab: ------------------------------')
-print(len(affiliation_vocab.key()))
+print(len(affiliation_vocab.keys()))
 
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
 print("Loaded affiliation vocab")
