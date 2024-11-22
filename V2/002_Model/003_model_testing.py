@@ -32,7 +32,7 @@ with open(os.path.join(curr_model_artifacts_location, "departments_list.pkl"), "
 
 print("Loaded list of departments")
 
-with open(os.path.join(curr_model_artifacts_location, "full_affiliation_dict.pkl"), "rb") as f:
+with open(os.path.join(curr_model_artifacts_location, "full_affiliation_dict_arg.pkl"), "rb") as f:
     full_affiliation_dict = pickle.load(f)
 
 print("Loaded affiliation dictionary")
