@@ -1,0 +1,377 @@
+paper_id	affiliation_string	labels	labels_name	dataset
+7488165	Valparaiso University	[149744451]	['149744451 - Valparaiso University']	sampled_200_head
+31098178	Laboratory of Metallurgy, Helsinki University of Technology; PO Box 6200 02015 TKK Finland	[-1]	['-1 - None']	sampled_200_head
+31098178	Pyrometallurgy Research Centre, University of Queensland; Brisbane Australia	[165143802]	['165143802 - University of Queensland']	sampled_200_head
+65114316	Institut für Physikalische Chemie, Freie Universität Berlin, Berlin 33, Deutschland	[75951250]	['75951250 - Freie Universität Berlin']	sampled_200_head
+65114316	Institut für Organische Chemie, Freie Universität Berlin, Berlin 33, Deutschland	[75951250]	['75951250 - Freie Universität Berlin']	sampled_200_head
+75974727	Bar-Ilan University	[13955877]	['13955877 - Bar-Ilan University']	sampled_200_head
+117340222	European Centre for Nanostructured Polymers, UdR INSTM, University of Perugia, Terni, Italy	[4210117864, 27483092, 4210155898]	['4210117864 - European Center for Nanostructured Polymers', '27483092 - University of Perugia']	sampled_200_head
+144950851	Department of Applied Computing and Mathematics (DACAM), Cranfield Institute of Technology, Cranfield, Bedford, England	[82284825]	['82284825 - Cranfield University']	sampled_200_head
+225512608	History in New York University	[57206974]	['57206974 - New York University']	sampled_200_head
+227551380	IM Setchenov Medical Academy	[17877952]	['-1 - None']	sampled_200_head
+227551380	Laboratory of Cell Immunity	[-1]	['4210109573 - Immunity and Cancer']	sampled_200_head
+227551380	EA Vagner Perm Medical Academy	[4210088483]	['4210088483 - Perm State Medical Academy']	sampled_200_head
+286745009	Univ.-Hals-, Nasen- und Ohrenklinik Rostock, Deutschland	[4210136182]	['4210136182 - Universitätsmedizin Rostock']	sampled_200_head
+297229595	National Centre for Scientific Research (CNIC)	[4210097719]	['4210097719 - National Council for Scientific Research']	sampled_200_head
+297229595	National Centre for Metallurgical Research (CENIM-CSIC	[-1]	['-1 - None']	sampled_200_head
+572544152	大分大学大学院	[-1]	['-1 - None']	sampled_200_head
+572544152	大分大学	[-1]	['-1 - None']	sampled_200_head
+572544152	大分工業高等専門学校	[-1]	['-1 - None']	sampled_200_head
+775947285	University of Salzburg;	[182212641]	['182212641 - University of Salzburg']	sampled_200_head
+775947285	St. Anna Children’s Hospital, Endoscopy Unit	[4210123554]	["4210123554 - St Anna Children's Hospital"]	sampled_200_head
+846706330	Ball Bros. Research Corp. Boulder, CO, United States	[4210132373]	['4210132373 - Ball']	sampled_200_head
+1087943175	Apollo Hospital; Nizam’s Institute of Medical Sciences	[139669409]	["139669409 - Nizam's Institute of Medical Sciences"]	sampled_200_head
+1483516959	Faculty of Health and Medical Sciences, University of Surrey, Guildford, GU2 7XH, Surrey, UK.	[28290843]	['28290843 - University of Surrey']	sampled_200_head
+1486801540	College Of William and Mary	[16285277]	['16285277 - William & Mary']	sampled_200_head
+1488637294	World Health Organization, , Ginebra, Suiza	[4210105654]	['1290603121 - World Health Organization - Pakistan']	sampled_200_head
+1516392471	Department of Medicine, Harvard Medical School, Boston, Massachusetts	[136199984]	['136199984 - Harvard University']	sampled_200_head
+1583215525	Dept. of Mech. Eng., Laval Univ., Quebec City, QC, Canada	[43406934]	['43406934 - Université Laval']	sampled_200_head
+1598363147	Department of biology, McGill University, Montréal, Canada	[5023651]	['5023651 - McGill University']	sampled_200_head
+1602265626	Pamukkale Üniversitesi	[48843708]	['48843708 - Pamukkale University']	sampled_200_head
+1788277699	School of Knowledge Science, Japan Advanced Institute of Science and Technology (JAIST)	[177738480]	['177738480 - Japan Advanced Institute of Science and Technology']	sampled_200_head
+1788277699	Algorithms, Bioinformatics, Complexity and Formal Methods Research Group, Technical University of Catalonia	[9617848]	['-1 - None']	sampled_200_head
+1865222586	[Raytheon BBN Technologies]	[1306686416]	['1306686416 - Raytheon Technologies']	sampled_200_head
+1873925860	Fac. of Electr. Eng. & Comput. Sci., Maribor Univ., Slovenia	[37696226]	['37696226 - University of Maribor']	sampled_200_head
+1899385039	queen mary university of london	[166337079]	['166337079 - Queen Mary University of London']	sampled_200_head
+1956226217	State Key Laboratory of Optical Technologies on Nano‐Fabrication and Micro‐Engineering Institute of Optics and Electronics Chinese Academy of Sciences Chengdu China	[4210128284,19820366]	['4210128284 - Institute of Optics and Electronics']	sampled_200_head
+1962768148	[Demetron]	[-1]	['-1 - None']	sampled_200_head
+1962768148	Demetron GmbH	[-1]	['-1 - None']	sampled_200_head
+1966606422	SungKyunKwan University	[848706]	['848706 - Sungkyunkwan University']	sampled_200_head
+1966606422	Korea University	[-1]	['4210161052 - Korea University']	sampled_200_head
+1966606422	School of Biological Sciences	[-1]	['-1 - None']	sampled_200_head
+2115987049	School of Biological Sciences	[-1]	['-1 - None']	sampled_200_head
+1966606422	School of Biological Sciences	[-1]	['-1 - None']	sampled_200_head
+2115987049	School of Biological Sciences	[-1]	['-1 - None']	sampled_200_head
+1967643335	Department of Plastics and Rubber , Technology University Colleges of Science and Technology , Calcutta, 700009, India	[106542073]	['106542073 - University of Calcutta']	sampled_200_head
+1970515032	Department of Microbiology & Immunology, Geisel School of Medicine at Dartmouth, Hanover, New Hampshire, USA.	[107672454]	['107672454 - Dartmouth College']	sampled_200_head
+1970515032	University of Toronto, Department of Molecular Genetics and Department of Biochemistry, Toronto, Ontario, Canada	[185261750]	['185261750 - University of Toronto']	sampled_200_head
+1970515032	Geisel School of Medicine at Dartmouth Department of Microbiology and Immunology Hanover New Hampshire USA	[107672454]	['107672454 - Dartmouth College']	sampled_200_head
+1970552986	Kantonsspitals Winterthur, Schweiz; Pathologischen Instituten der Universität Zürich, Schweiz	[4210099681,202697423]	['-1 - None']	sampled_200_head
+1973879028	School of Physics Science and Technology, Nanjing Normal University, Nanjing#N#210097,#N#People’s Republic of China	[152031979]	['152031979 - Nanjing Normal University']	sampled_200_head
+1973879028	Department of Applied Physics, College of Science, South China Agricultural University,#N#Guangzhou 510640,#N#People’s Republic of China; State Key Laboratory of Optoelectronic Materials and Technologies, School of Physics and#N#Engineering, Sun Yat-sen University, Guangzhou 510275,#N#People’s Republic of China	[101479585, 157773358]	['101479585 - South China Agricultural University', '157773358 - Sun Yat-sen University']	sampled_200_head
+1976146921	Department of Food, Agricultural and Biological Engineering, The Ohio State University, Columbus OH 43210-1057.	[52357470]	['52357470 - The Ohio State University']	sampled_200_head
+1976146921	Advanced Foods Branch, Sustainability Directorate, U.S. Army Natick RD&E Center SSCOM, Natick MA 01760-5018. Corresponding author. Phone: 508/233-4516. Fax: 508/233-5274. E-mail: abarrett@natick-enh2.army.mil	[2799998900]	['-1 - None']	sampled_200_head
+1976823878	Departamento de Física , Universidad de Extremadura , E-06071 Badajoz, Spain	[80606768]	['80606768 - University of Extremadura']	sampled_200_head
+1976823878	Institute for Theoretical Physics, Utrecht University, P.O. Box 80006, 3508 TA Utrecht, The Netherlands	[193662353]	['193662353 - Utrecht University']	sampled_200_head
+1977345310	Department of Oncology, University & General Hospital, Udine, Italy.	[129043915,4210126152]	['129043915 - University of Udine']	sampled_200_head
+1977345310	Department of Oncology, University & General Hospital, Pisa, Italy	[4210165410]	['4210165410 - Azienda Ospedaliera Universitaria Pisana']	sampled_200_head
+1979005502	Dept. of Electron. Syst., R. Inst. of Technol., Stockholm, Sweden	[86987016]	['86987016 - Royal Institute of Technology']	sampled_200_head
+1979005502	School of Computer, National University of Defense, Technology Changsha, China	[170215575]	['170215575 - National University of Defense Technology']	sampled_200_head
+1979614584	I. V. Kurchatov Atomic Energy Institute, Academy of Sciences, Moscow, USSR††Present address: Institute of Nuclear Physics, Academy of Sciences, Novosibirsk, USSR.	[2800235667]	['2800235667 - Kurchatov Institute']	sampled_200_head
+1980303101	Centro de Biología Molecular Severo Ochoa, Consejo Superior de Investigaciones Cientificas (CSIC)/Universidad Autonoma de Madrid (UAM), Madrid, Spain.	[4210146061, 63634437, 134820265]	['4210146061 - Centro de Biología Molecular Severo Ochoa', '63634437 - Autonomous University of Madrid', '134820265 - Spanish National Research Council']	sampled_200_head
+1980614178	Griffith University BrisbaneAustralia	[11701301]	['11701301 - Griffith University']	sampled_200_head
+1985696127	University of Iowa	[126307644]	['126307644 - University of Iowa']	sampled_200_head
+1986447712	College of Information Science & Engineering, Central South University, Changsha, P.R. China	[139660479]	['139660479 - Central South University']	sampled_200_head
+1987481834	Division of Hospital Infection, Central Public Health Laboratory, Colindale, London.	[-1]	['-1 - None']	sampled_200_head
+1987538116	Rutherford Appleton Lab. (UK) and Kumho Institute of Science and Technology (South Korea)	[1286704778]	['-1 - None']	sampled_200_head
+1987538116	Rutherford Appleton Lab. (UK) and Kumho Information and Telecommunication Lab. (South Korea)	[1286704778]	['1286704778 - Rutherford Appleton Laboratory']	sampled_200_head
+1987538116	Rutherford Appleton Lab. (United Kingdom)	[1286704778]	['1286704778 - Rutherford Appleton Laboratory']	sampled_200_head
+1989849806	Dept of Urology, Inje University, Seoul, South Korea	[104338594]	['104338594 - Inje University']	sampled_200_head
+1990580906	School of Engineering of Universidad Pontificia Comillas, C/Alberto Aguilera, 23, 28015 Madrid, Spain	[96580804]	['96580804 - Comillas Pontifical University']	sampled_200_head
+1990967700	Department of Industrial Chemistry, Engineering College, Kyungpook National University, Taegu 702-701, South Korea	[31419693]	['31419693 - Kyungpook National University']	sampled_200_head
+1991257623	Depto de Ciencias Fisiológicas, Facultad de Ciencias Biológicas, Pontificia Universidad Católica de Chile, Casilla 114-D, Santiago, Chile	[162148367]	['162148367 - Pontificia Universidad Católica de Chile']	sampled_200_head
+1991257623	Instituto de Ciencias Biomédicas, Facultad de Medicina Universidad de Chile, Santiago 6530499, Chile, the	[69737025]	['69737025 - University of Chile']	sampled_200_head
+1991257623	Departments of Pharmacology and	[-1]	['-1 - None']	sampled_200_head
+1991257623	Physiology and Cell Biology, Center of Biomedical Research Excellence, University of Nevada, School of Medicine, Reno, Nevada 89557, and the	[134113660]	['134113660 - University of Nevada Reno']	sampled_200_head
+1991945750	Institut fur Kristallographie der , Universitat zu Koln	[180923762]	['180923762 - University of Cologne']	sampled_200_head
+1991945750	IV. Physikalisches Institut der Universität Göttingen	[74656192]	['74656192 - University of Göttingen']	sampled_200_head
+1995070659	 Department of Materials Science & Engineering, University of Toronto, Toronto, ON, Canada	[185261750]	['185261750 - University of Toronto']	sampled_200_head
+1996536401	Russian Academy of Sciences	[1313323035]	['-1 - None']	sampled_200_head
+1996727984	Department of Neurology, University Hospital (CHUV), Lausanne, Switzerland.	[2802229882]	['2802229882 - University Hospital of Lausanne']	sampled_200_head
+2013380405	Laboratoire de l’Accélérateur Linéaire	[4210144781]	['4210144781 - Large Heavy Ion National Accelerator']	sampled_200_head
+2013380405	Royal Holloway University of London	[184558857]	['184558857 - Royal Holloway University of London']	sampled_200_head
+2013776763	Sch. of Electron. Inf. & control Eng., Beijing Univ. of Technol., Beijing, China	[37796252]	['37796252 - Beijing University of Technology']	sampled_200_head
+2015902999	University of Miami Miller School of Medicine  Miami Florida USA	[145608581]	['145608581 - University of Miami']	sampled_200_head
+2015902999	Psychiatry and Behavioral Sciences	[-1]	['4210131307 - Institute of Behavioral Sciences']	sampled_200_head
+2016392562	Universidad de Tarapacá, Arica, Chile	[185652977]	['185652977 - University of Tarapacá']	sampled_200_head
+2016589759	Department of Radiology, The University of Texas Health Science Center, 7703 Floyd Curl Drive, San Antonio, Texas 78284 USA.	[16452829, 4210159031]	['16452829 - The University of Texas System', '4210159031 - The University of Texas Health Science Center']	sampled_200_head
+2016589759	Department of Cellular and Structural Biology, The University of Texas Health Science Center, 7703 Flyod Curl Drive, San Antonio, Texas 78284 USA.	[16452829, 4210159031]	['16452829 - The University of Texas System', '4210159031 - The University of Texas Health Science Center']	sampled_200_head
+2018045047	Univ.\ of Tokyo	[74801974]	['-1 - None']	sampled_200_head
+2018045047	Medical Chemistry	[-1]	['-1 - None']	sampled_200_head
+2020402472	Marseille – France	[-1]	['-1 - None']	sampled_200_head
+2021367894	Alcan International Ltd, Southam Road, Banbury , GB-Oxon, 0X16 7SP, Great-Britain	[-1]	['-1 - None']	sampled_200_head
+2025007323	Department of Chemistry, University of Georgia, Athens, 30602 USA	[165733156]	['165733156 - University of Georgia']	sampled_200_head
+2026014239	 Cardiac Electrophysiology Research and Training Center, Chiang Mai University, Chiang Mai, Thailand.	[48076826]	['48076826 - Chiang Mai University']	sampled_200_head
+2028881138	Seoul National Univ.#TAB#	[139264467]	['139264467 - Seoul National University']	sampled_200_head
+2034626890	Canadian Center of Science and Education	[-1]	['-1 - None']	sampled_200_head
+2035860654	University of Sydney, Australia;	[129604602]	['129604602 - University of Sydney']	sampled_200_head
+2045900008	REQUIMTE, Departamento de Química, Faculdade de Ciências, Universidade do Porto , Rua do Campo Alegre S/N, 4169-007 Porto, Portugal.	[182534213, 4210138594]	['182534213 - University of Porto', '4210138594 - Rede de Química e Tecnologia']	sampled_200_head
+2045900008	Laboratório de Catálise e Materiais – Laboratório Associado LSRE/LCM, Faculdade de Engenharia, Universidade do Porto, Rua Dr. Roberto Frias, s/n, 4200-465 Porto, Portugal	[182534213]	['182534213 - University of Porto']	sampled_200_head
+2045900008	REQUIMTE, Departamento de Química, Faculdade de Ciências, Universidade do Porto, Rua do Campo Alegre, s/n, 4169-007 Porto, Portugal	[182534213, 4210138594]	['182534213 - University of Porto', '4210138594 - Rede de Química e Tecnologia']	sampled_200_head
+2048917075	Laboratory of Gynecological Physiopathology, Department of Obstetrics and Gynecology (K.U.L.), Academisch Ziekenhuis St. Rafaël, Leuven, Belgium	[2800231306]	['2800231306 - Universitair Ziekenhuis Leuven']	sampled_200_head
+2052470202	U.S. Air Force, Dental Corps, Wilford Hall USAF Medical Center, Lackland Air Force Base, Texas 78236-5300.	[2799567722,4210089612]	['4210089612 - United States Air Force']	sampled_200_head
+2052470202	Dr. Wood is lieutenant colonel, U.S. Air Force, Dental Corps, and assistant chairman, Department of Orthodontics, Wilford Hall Medical Center, Lackland Air Force Base.	[2799567722,4210089612]	['2799567722 - Wilford Hall Medical Center']	sampled_200_head
+2052487294	Department of Bioagricultural Sciences, National Chiayi University, Chiayi, Taiwan	[183570559]	['183570559 - National Chiayi University']	sampled_200_head
+2053244440	Institut für Festkörperphysik, Technische Universität Berlin, Hardenbergstr. 36 10623 Berlin, Germany	[4577782]	['4577782 - Technical University of Berlin']	sampled_200_head
+2053244440	Institut für Experimentelle Physik, Otto-von-Guericke Universität Magdeburg, Universitätsplatz 2, 39106 Magdeburg, Germany.	[95793202]	['95793202 - Otto-von-Guericke University Magdeburg']	sampled_200_head
+2056709992	Coordination Chemistry Institute, State Key Laboratory of Coordination Chemistry, Nanjing University, Centre for Advanced Studies in Science and Technology of Microstructures, Nanjing, China	[4210140493, 881766915]	['4210140493 - Collaborative Innovation Center of Advanced Microstructures', '881766915 - Nanjing University']	sampled_200_head
+2066216045	Ph. D., American University in Cairo and Suez Canal University	[114794399,80693520]	['114794399 - Suez Canal University']	sampled_200_head
+2066216045	B.Sc. Petrobel Company	[-1]	['4210093312 - Defence Bioengineering and Electromedical Laboratory']	sampled_200_head
+2074584152	Division of Plastic Surgery, University of Miami School of Medicine, Miami Children's Hospital, Fla 33125, USA.	[4210118328, 4210146630,145608581]	['4210118328 - University of Miami Hospital', "4210146630 - Miami Children's Hospital"]	sampled_200_head
+2081388776	Federal University of Minas Gerais, Belo Horizonte, BRAZIL	[110200422]	['110200422 - Universidade Federal de Minas Gerais']	sampled_200_head
+2085618557	Department of Solid State Engineering, Institute of Chemical Technology, 166 28 Prague, Czech Republic	[9073902]	['9073902 - University of Chemistry and Technology']	sampled_200_head
+2085618557	Nuclear Physics Institute AS, 250 68 Rez, Czech Republic	[4210149327]	['4210149327 - Nuclear Physics Institute of the Czech Academy of Sciences']	sampled_200_head
+2085968172	Königsberg i. Pr.	[-1]	['-1 - None']	sampled_200_head
+2088086541	University of Iowa, Iowa City	[126307644]	['126307644 - University of Iowa']	sampled_200_head
+2088086541	Boston University School of Medicine, Mass	[111088046]	['111088046 - Boston University']	sampled_200_head
+2088086541	University of Alabama at Birmingham	[32389192]	['32389192 - University of Alabama at Birmingham']	sampled_200_head
+2088086541	University of California at San Francisco	[180670191]	['180670191 - University of California, San Francisco']	sampled_200_head
+2088086541	US Department of Agriculture, Human Nutrition Research Center for Aging, Tufts University, Boston, Mass	[121934306]	['121934306 - Tufts University']	sampled_200_head
+2090976416	Arkansas State University	[125956826]	['125956826 - Arkansas State University']	sampled_200_head
+2090976416	University of Cincinnati**	[63135867]	['63135867 - University of Cincinnati']	sampled_200_head
+2090976416	University of Central Arkansas ,	[32038505]	['32038505 - University of Central Arkansas']	sampled_200_head
+2093118581	Sandia National Laboratories (United States)	[4210104735]	['4210104735 - Sandia National Laboratories']	sampled_200_head
+2098450409	Department of Organic Chemistry, St. Petersburg Institute of Technology (Technical University), Moskovskii pr 26, 190013 St. Petersburg, Russia	[98642627]	['98642627 - St. Petersburg State Technological Institute']	sampled_200_head
+2098450409	Institute für Chemie und Biochemie, Freie Universität Berlin, Fabeckstrasse 34–36, 14195 Berlin, Germany; School of Engineering and Science, Jacobs University Bremen, Campus Ring 1, 28759 Bremen, Germany https://www.jacobs‐university.de/de/groeschenthaler/researchgrouphttps://www.jacobs‐university.de/de/ses/groeschenthaler	[193619901, 75951250]	['193619901 - Jacobs University', '75951250 - Freie Universität Berlin']	sampled_200_head
+2098450409	School of Engineering and Science, Jacobs University Bremen, Campus Ring 1, 28759 Bremen, Germany https://www.jacobs-university.de/de/groeschenthaler/researchgrouphttps://www.jacobs-university.de/de/ses/groeschenthaler	[193619901]	['193619901 - Jacobs University']	sampled_200_head
+2103619162	UniversitÈ de Nantes	[97188460]	['97188460 - University of Nantes']	sampled_200_head
+2103619162	University Hospital Department of Dermatology Brest France	[4210132604]	['4210132604 - Centre Hospitalier Régional Universitaire de Brest']	sampled_200_head
+2103619162	Children's Memorial Hospital	[-1]	['-1 - None']	sampled_200_head
+2103619162	University of Dundee#TAB#	[177639307]	['177639307 - University of Dundee']	sampled_200_head
+2103619162	University of Giessen Department of Psychosomatic Medicine‐Psychodermatology Giessen Germany	[200763008]	['200763008 - University of Giessen']	sampled_200_head
+2103619162	Aarhus university;	[204337017]	['204337017 - Aarhus University']	sampled_200_head
+2103619162	St. Justine University Hospital	[2802351361]	['2802351361 - Centre Hospitalier Universitaire Sainte-Justine']	sampled_200_head
+2103619162	Intensive Care and Dermatological Sciences Department of Anesthesia Milan Italy	[-1]	['-1 - None']	sampled_200_head
+2103619162	Vrije Universiteit Brüssel	[13469542]	['13469542 - Vrije Universiteit Brussel']	sampled_200_head
+2103619162	Hopital l'Archet	[4210118460]	["4210118460 - Hôpital l'Archet"]	sampled_200_head
+2103619162	Universidade de São Paulo	[17974374]	['-1 - None']	sampled_200_head
+2103619162	Rady Children's Hospital.	[4210087384]	['-1 - None']	sampled_200_head
+2108385394	Department of Molecular & Medical Pharmacology, David Geffen School of Medicine at UCLA, University of California Los Angeles, Los Angeles, USA	[161318765]	['161318765 - University of California, Los Angeles']	sampled_200_head
+2115987049	CEH BanchoryHill of Brathens, Banchory, Aberdeenshire AB31 4BY, UK	[-1]	['-1 - None']	sampled_200_head
+2115987049	Institute of Evolutionary Biology, University of Edinburgh, King’s Buildings, Edinburgh EH9 3JT, UK ,	[98677209]	['98677209 - University of Edinburgh']	sampled_200_head
+2117748945	College of Marine Geosciences, Ocean University of China, Qingdao, Shandong, People's Republic of China; Key Laboratory of Sea Floor Science and Exploration Technique, Ministry of Education, Qingdao, Shandong, People's Republic of China, 266100	[59028903]	['59028903 - Ocean University of China']	sampled_200_head
+2117748945	Department of Geology, University of South Florida, Tampa, FL, 33620 U.S.A	[2613432]	['2613432 - University of South Florida']	sampled_200_head
+2117748945	College of Marine Geosciences, Ocean University of China, Qingdao, Shandong, People's Republic of China	[59028903]	['59028903 - Ocean University of China']	sampled_200_head
+2125090689	Hydrobiological Institute of the Academy of Sciences of the Czech Republic, Na Sádkách 7, CZ‐37005 Céské Budéjovice, Czech Republic.	[4210143603]	['4210143603 - Institute of Hydrobiology']	sampled_200_head
+2125090689	Faculty of Biological Sciences, University of South Bohemia, CZ-37005 Céské Budéjovice, Czech Republic.; Hydrobiological Institute of the Academy of Sciences of the Czech Republic, Na Sádkách 7, CZ‐37005 Céské Budéjovice, Czech Republic.	[3124161356]	['3124161356 - University of South Bohemia in České Budějovice']	sampled_200_head
+2135209961	Perimeter Institute for Theoretical Physics, Waterloo, Canada, Department of Physics, University of Guelph, Guelph, Canada, and Center for Computation and Technology, Louisiana State University, Baton Rouge	[183974707, 79817857, 121820613]	['183974707 - Perimeter Institute', '79817857 - University of Guelph', '121820613 - Louisiana State University']	sampled_200_head
+2135209961	Center for Computation and Technology#R##N#Louisiana State University	[121820613]	['121820613 - Louisiana State University']	sampled_200_head
+2135209961	Center for Computation and Technology and Department of Computer Science, Louisiana State University	[121820613]	['121820613 - Louisiana State University']	sampled_200_head
+2135209961	University of Illinois Urbana Champaign >  >  >  >	[157725225]	['157725225 - University of Illinois Urbana-Champaign']	sampled_200_head
+2138559988	Naval Electronics Laboratory Center San Diego, Calif. 92152	[-1]	['-1 - None']	sampled_200_head
+2139244987	William Mitchell College of Law.	[-1]	['178721510 - Mitchell College']	sampled_200_head
+2140949981	Authors are with Dept. of Food, Agricultural & Biological Engineering, The Ohio State Univ., 590 Woody Hayes Dr., 206 Agricultural Engineering Bldg., Columbus, OH 43210-1058, U.S.A. Direct inquiries to author Sastry (E-mail: sastry.2@osu.edu).	[52357470]	['52357470 - The Ohio State University']	sampled_200_head
+2141882545	[University of Freiburg,Germany]	[161046081]	['161046081 - University of Freiburg']	sampled_200_head
+2141882545	Hamburg University of Technology,Germany	[884043246]	['884043246 - Hamburg University of Technology']	sampled_200_head
+2145712147	Environmental Chemistry Division, Department of Environmental Sciences, Bharathiar University, Coimbatore‐641 046. Tamil Nadu, India	[111575329]	['111575329 - Bharathiar University']	sampled_200_head
+2151180560	VicHealth Tobacco Control Centre, Carlton, Vic, Australia.	[216792429]	['216792429 - Victorian Health Promotion Foundation']	sampled_200_head
+2153472791	Department of Psychology University of Notre Dame 118 Haggar Hall Notre Dame IN 46556 USA	[107639228]	['107639228 - University of Notre Dame']	sampled_200_head
+2153472791	Department of Educational Psychology, 5th Floor Teacher’s Collage, Ball State University, Muncie IN 47306	[198089087]	['198089087 - Ball State University']	sampled_200_head
+2154525396	Department of Microbiology, Montana State University, Bozeman 59717-3520, USA.	[23732399]	['23732399 - Montana State University']	sampled_200_head
+2154996146	Electr. & Comput. Eng. Dept., Univ. of Delaware, Newark, DE, USA	[86501945]	['86501945 - University of Delaware']	sampled_200_head
+2154996146	Appl. Phys. Lab., Univ. of Washington, Seattle, WA, USA	[201448701]	['201448701 - University of Washington']	sampled_200_head
+2154996146	Dept. of Electr. & Comput. Eng., Univ. of Cincinnati, Cincinnati, OH, USA	[63135867]	['63135867 - University of Cincinnati']	sampled_200_head
+2154996146	Air Force Res. Lab. Sensors Directorate, WPAFB, Dayton, OH, USA	[1280414376, 2799950915]	['1280414376 - United States Air Force Research Laboratory', '2799950915 - Wright-Patterson Air Force Base']	sampled_200_head
+2156690298	Dept. of Comput Sci., Wayne State Univ., Detroit, MI, USA	[185443292]	['185443292 - Wayne State University']	sampled_200_head
+2158780407	Texas Instrum., Inc., Dallas, TX, USA	[74760111]	['74760111 - Texas Instruments']	sampled_200_head
+2164971443	St. Louis, Missouri, USA	[-1]	['208333798 - University of Missouri–St. Louis']	sampled_200_head
+2166372863	Department of Chemical Physics and Macromolecular Chemistry , Kazak National University , Almaty, Kazakhstan	[185571130]	['-1 - None']	sampled_200_head
+2217249025	Hydr. Engr., Corps of Engrs., U. S. Dept. of the Army, Mobile Dist., Mobile, Ala.	[4210088792]	['-1 - None']	sampled_200_head
+2251872518	National Institute of Informatics,	[184597095]	['184597095 - National Institute of Informatics']	sampled_200_head
+2260307871	Laboratory of Cellular Physiology and Metabolism, National Heart Institute, National Institutes of Health, Bethesda 14, Maryland	[4210106489, 1299303238]	['4210106489 - National Heart Lung and Blood Institute', '1299303238 - National Institutes of Health']	sampled_200_tail
+2264247739	Employee Benefit Research Institute (EBRI).	[2801147030]	['2801147030 - Employee Benefit Research Institute']	sampled_200_tail
+2286883301	Joseph P. Ripley Prof. of Engrg.; Cornell Univ., Ithaca, N.Y., USA	[205783295]	['205783295 - Cornell University']	sampled_200_tail
+2286883301	Undergraduate Student; School of Civ. and Environmental Engrg., Cornell Univ., Ithaca, N.Y., USA	[205783295]	['205783295 - Cornell University']	sampled_200_tail
+2297594898	#N##N#cDepartment of Energy Engineering Hanyang University	[4575257]	['4575257 - Hanyang University']	sampled_200_tail
+2297594898	#N##TAB##TAB##TAB#aBar-Ilan University	[13955877]	['-1 - None']	sampled_200_tail
+2297594898	#N##TAB##TAB##TAB#bBar Ilan University	[13955877]	['13955877 - Bar-Ilan University']	sampled_200_tail
+2314553643	Department of Chemistry, Tsinghua University, Beijing 100084, P. R. China	[99065089]	['99065089 - Tsinghua University']	sampled_200_tail
+2315013432	LiveSTRONG Cancer Institutes	[1305023659]	['1305023659 - Livestrong Foundation']	sampled_200_tail
+2315013432	Vanderbilt University,#TAB#	[200719446]	['200719446 - Vanderbilt University']	sampled_200_tail
+2329422063	Department of Chemistry and Chemical Engineering; Baoji University of Arts and Sciences; Baoji Shaanxi 721013 China	[2799293361]	['2799293361 - Baoji University of Arts and Sciences']	sampled_200_tail
+2329422063	State Key Laboratory of Applied Organic Chemistry Key Laboratory of Nonferrous Metal Chemistry and Resources Utilization of Gansu Province Department of Chemistry Lanzhou University Lanzhou 730000 China.	[76214153]	['76214153 - Lanzhou University']	sampled_200_tail
+2330028493	Department of Surgery, Center for Surgical Infection Research and Therapeutics Pritzker School of Medicine, University of Chicago, Chicago, Illinois.	[40347166]	['40347166 - University of Chicago']	sampled_200_tail
+2331197475	المركز الجامعي بتامنغست الجزائر	[-1]	['-1 - None']	sampled_200_tail
+2347491834	a, WEN Min b	[-1]	['-1 - None']	sampled_200_tail
+2348917764	Neonatal Room,Department of Pediatrics,the First People's Hospital of Xiangshan County,Zhejiang Province,Xiangshan 315700,China	[4210154679]	["4210154679 - Xiangshan County First People's Hospital"]	sampled_200_tail
+2349514341	First Institute of Oceanography,State Oceanic Administration,Qingdao 266061, China)	[4210114556]	['4210114556 - First Institute of Oceanography']	sampled_200_tail
+2356218904	② School of Life Science,East Normal University,Shanghai 200062,China	[66867065]	['66867065 - East China Normal University']	sampled_200_tail
+2356558948	Hebei Vocational College of Justice and Police Officers,Shijiazhuang 050081,China)	[-1]	['-1 - None']	sampled_200_tail
+2362622093	Taiyuan University of Science and Technology Department of Computer,   Taiyuan  030024,  China)	[46305995]	['46305995 - Taiyuan University of Science and Technology']	sampled_200_tail
+2370339323	Ophthalmology Department,Luqiao Hospital,Enze Medical Center of Taizhou	[4210158774]	['4210158774 - Zhejiang Taizhou Hospital']	sampled_200_tail
+2373198534	2Clinical Pharmacology Institute,Medical College of Nanchang University,Nanchang 330006,China	[141649914]	['141649914 - Nanchang University']	sampled_200_tail
+2376392260	Private Central Vocational and Technical Anatolian High School, Manisa, Turkey	[-1]	['-1 - None']	sampled_200_tail
+2376392260	Celal Bayar University, Faculty of Art and Sciences, Department of Mathematics, Manisa, Turkey	[16748637]	['16748637 - Celal Bayar University']	sampled_200_tail
+2383909593	~1,LIN Wen-han~2,ZHANG Liang-liang~1,LIN Peng~	[-1]	['-1 - None']	sampled_200_tail
+2390824877	et al Department of Radiology,Changhai Hospital,Second Military Medical University	[177933477]	['-1 - None']	sampled_200_tail
+2391608451	College of Liberal Arts,Anhui Normal University,Wuhu 241000,China)	[4472751]	['4472751 - Anhui Normal University']	sampled_200_tail
+2393558753	Dalian Naval Academy,Dalian 116018)	[-1]	['-1 - None']	sampled_200_tail
+2394413280	College of P	[-1]	['-1 - None']	sampled_200_tail
+2406988575	Infection Prevention Coordinator, Madonna Rehabilitation Hospital	[1316036230]	['1316036230 - Madonna Rehabilitation Hospital']	sampled_200_tail
+2411025352	Department of Gastroenterology, First Hospital of Suzhou University, Suzhou 215006, China.	[4210153519]	['-1 - None']	sampled_200_tail
+2415547518	 University of Pennsylvania, Philadelphia, Pennsylvania, #N#USA	[79576946]	['79576946 - University of Pennsylvania']	sampled_200_tail
+2416380542	Zagazig University, Faculty of Science, Department of Physics, Zagazig, Egypt	[192398990]	['192398990 - Zagazig University']	sampled_200_tail
+2418854925	Federal University of Rio Grande do Sul, Felizardo 750, LAPEX Building/Room 222, 90690-200 Porto Alegre - Rio Grande do Sul - Brazil. jefferson.loss@ufrgs.br.	[130442723]	['130442723 - Federal University of Rio Grande do Sul']	sampled_200_tail
+2418854925	Federal University of Rio Grande do Sul,Brazil	[130442723]	['130442723 - Federal University of Rio Grande do Sul']	sampled_200_tail
+2511841088	***University of Illinois at Urbana-Champaign	[157725225]	['157725225 - University of Illinois Urbana-Champaign']	sampled_200_tail
+2511841088	Iowa State University (formerly University of Illinois Urbana-Champaign)	[157725225, 173911158]	['157725225 - University of Illinois Urbana-Champaign', '173911158 - Iowa State University']	sampled_200_tail
+2526639817	Univ. College Dublin	[100930933]	['100930933 - University College Dublin']	sampled_200_tail
+2526639817	ABP Marine Environmental Research Ltd.	[-1]	['-1 - None']	sampled_200_tail
+2526639817	Bournemouth University.	[9300472]	['9300472 - Bournemouth University']	sampled_200_tail
+2526639817	UN Environment World Conservation Monitoring Centre; University of Plymouth	[164576550,897542642]	['164576550 - World Conservation Monitoring Centre']	sampled_200_tail
+2526639817	Bournemouth University	[9300472]	['9300472 - Bournemouth University']	sampled_200_tail
+2551833927	Institute of International Management (IMBA)	[-1]	['-1 - None']	sampled_200_tail
+2551833927	National Cheng Kung University	[91807558]	['91807558 - National Cheng Kung University']	sampled_200_tail
+2560944090	Medical Oncology, Dana‐Farber Cancer Institute, Harvard Medical School, Boston, MA, USA	[4210117453,136199984]	['4210117453 - Dana-Farber Cancer Institute']	sampled_200_tail
+2560944090	Medical Oncology, Dana-Farber Cancer Institute, Boston VA Healthcare System, Harvard Medical School, Boston, MA, USA,	[4210117453,136199984]	['4210117453 - Dana-Farber Cancer Institute']	sampled_200_tail
+2561613276	Molecular Science Laboratory, National Institute of Immunology, New Delhi, India.	[4210156726]	['4210156726 - National Institute of Immunology']	sampled_200_tail
+2567581372	Universidade Estadual do Centro-Oeste (Unicentro)	[4210133832]	['4210133832 - Universidade Estadual do Centro-Oeste']	sampled_200_tail
+2580802119	International and European Law	[-1]	['-1 - None']	sampled_200_tail
+2583058215	Universidad de Costa Rica#TAB#	[31944674]	['31944674 - University of Costa Rica']	sampled_200_tail
+2601029436	National Blood Transfusion Institute	[4210100434]	['4210100434 - National Blood Transfusion Service']	sampled_200_tail
+2601029436	Academic Institute	[-1]	['-1 - None']	sampled_200_tail
+2601029436	Stanford University School of Medicine;	[97018004]	['97018004 - Stanford University']	sampled_200_tail
+2601029436	Univerzitetni Klinicni Center Ljubljana	[2801323708]	['2801323708 - Ljubljana University Medical Centre']	sampled_200_tail
+2606855263	Key Laboratory of Measurement & Control New Technology and System for Industrial Process, North China Electric Power University, Changping District, 102206 Beijing, China	[153473198]	['153473198 - North China Electric Power University']	sampled_200_tail
+2606855263	State Key Laboratory of Alternate Electrical Power System with Renewable Energy Sources, North China Electric Power University, Changping District, 102206 Beijing, China	[153473198]	['153473198 - North China Electric Power University']	sampled_200_tail
+2616022286	Sociedad Colombiana de Obstetricia y Ginecología	[4210129735]	['4210129735 - Federación Colombiana de Obstetricia y Ginecología']	sampled_200_tail
+2707608130	Leshan Normal university	[2802584641]	['2802584641 - Leshan Normal University']	sampled_200_tail
+2737391652	Department of Informatics and Mathematical Modeling	[-1]	['-1 - None']	sampled_200_tail
+2737391652	Language-Based Technology, Department of Informatics and Mathematical Modeling	[-1]	['-1 - None']	sampled_200_tail
+2755958057	UO Nefrologia e Dialisi, Ospedale San Bortolo & International Renal Research Institute Vicenza (IRRIV), Vicenza	[4210159701,4210152245]	['4210159701 - International Renal Research Institute of Vicenza']	sampled_200_tail
+2755958057	UO Nefrologia e Dialisi, Ospedale Sant'Anna, ASST-Lariana, Como	[4210149118,4210127645]	["4210149118 - Ospedale Sant'Anna"]	sampled_200_tail
+2755958057	UO Nefrologia e Dialisi, Ospedale L. Parodi- Delfino, Colleferro, Roma	[-1]	['-1 - None']	sampled_200_tail
+2755958057	UO Nefrologia, Dialisi e Ipertensione, IRCCS Ospedale San Raffaele, Milano	[4210133214]	['4210133214 - IRCCS Ospedale San Raffaele']	sampled_200_tail
+2755958057	UO Nefrologia e Dialisi, Ospedale San Gerardo, ASST Monza, Monza	[4210110840]	['4210110840 - Azienda Ospedaliera San Gerardo']	sampled_200_tail
+2755958057	UO Nefrologia e Dialisi, Ospedale V. Fazzi, ASL Lecce, Lecce	[4210152598]	['4210152598 - Ospedale Vito Fazzi']	sampled_200_tail
+2765507066	College of Computer Science, Chongiqng University, Chongqing, China	[158842170]	['158842170 - Chongqing University']	sampled_200_tail
+2768458936	SurgeryWright State University, 3640 Colonel Glenn Hwy., 238 Health SciencesSchool of MedicineDaytonOH45435‐0001	[19648265]	['-1 - None']	sampled_200_tail
+2768458936	PathologyWright State University, 3640 Colonel Glenn Hwy., 053 Health SciencesSchool of MedicineDaytonOH45435‐0001	[19648265]	['-1 - None']	sampled_200_tail
+2793064246	Northwest Fisheries Science Center, Seattle.	[4210166920]	['4210166920 - Northwest Fisheries Science Center']	sampled_200_tail
+2802209927	[Electronics Engineering Department, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil]	[110200422]	['110200422 - Universidade Federal de Minas Gerais']	sampled_200_tail
+2802209927	Smart Surveillance Interest Group, Computer Science Department, Universidade Federal de Minas Gerais, Belo Horizonte, Brazil	[110200422]	['110200422 - Universidade Federal de Minas Gerais']	sampled_200_tail
+2895612964	Botany department, Hazara University, Mansehra, Pakistan	[263208278]	['263208278 - Hazara University']	sampled_200_tail
+2895612964	Botany Department Government Post Graduate College Mansehra, Pakistan; Botany department, Hazara University, Mansehra, Pakistan	[263208278]	['263208278 - Hazara University']	sampled_200_tail
+2895612964	Department of Environment Sciences, International Islamic University, Islamabad, Pakistan	[121243025]	['121243025 - International Islamic University, Islamabad']	sampled_200_tail
+2895612964	Botany department, Government Post graduate college, Mansehra, Pakistan	[-1]	['-1 - None']	sampled_200_tail
+2895612964	Directorate of Higher education KPK, Pakistan	[2802999120]	['2802999120 - Government of Khyber Pakhtunkhwa']	sampled_200_tail
+2895612964	Department of Chemistry, Government Post graduate college, Mansehra, Pakistan	[-1]	['-1 - None']	sampled_200_tail
+2897697409	Lobachevsky State University of Nizhny Novgorod, Nizhny Novgorod, Russia,	[79563041]	['79563041 - N. I. Lobachevsky State University of Nizhny Novgorod']	sampled_200_tail
+2897697409	Submicron Heterostructures for Microelectronics Research & Engineering Center, Russian Academy of Sciences, St. Petersburg, Russia	[4210126858,1313323035]	['4210126858 - Submicron Heterostructures for Microelectronics Research and Engineering Center']	sampled_200_tail
+2897697409	Institute for Physics of Microstructures, Russian Academy of Sciences, Nizhny Novgorod, Russia; Lobachevsky State University of Nizhny Novgorod, Nizhny Novgorod, Russia	[4210144079,1313323035,79563041]	['4210144079 - Institute for Physics of Microstructures']	sampled_200_tail
+2900042245	Ophthalmology, Novartis Institutes for Biomedical Research, Cambridge, MA, United States of America	[4210117619]	['-1 - None']	sampled_200_tail
+2903074750	Consiglio per la ricerca in agricoltura e l’analisi dell’economia agraria - Research Centre for Plant Protection andCertification (CREA-DC), via Lanciola 12/A, 50125, Firenze, Italy	[-1]	['-1 - None']	sampled_200_tail
+2903074750	University of Naples Federico II Department of Agricultural Sciences  Via Università 100 80055 Portici Naples Italy	[71267560]	['71267560 - University of Naples Federico II']	sampled_200_tail
+2910094746	Department of Mechanics and Mathematics Lviv National University, Lviv, Ukraine	[98435010]	['98435010 - Lviv Polytechnic National University']	sampled_200_tail
+2910094746	Ternopil’ National Economic University, Ternopil’, Ukraine	[160977438]	['160977438 - Ternopil National Economic University']	sampled_200_tail
+2922038979	Boston University, United States	[111088046]	['111088046 - Boston University']	sampled_200_tail
+2935827537	School of Pharmacy, Shenyang Pharmaceutical University, 103 Wenhua Road Shenhe District, 110016, Shenyang, Liaoning Province, PR China.	[103890011]	['103890011 - Shenyang Pharmaceutical University']	sampled_200_tail
+2938874516	Department of Psychology, University of Wisconsin-Madison, Madison, Wisconsin.	[135310074]	['135310074 - University of Wisconsin–Madison']	sampled_200_tail
+2938874516	Department of Psychiatry School of Medicine and Public Health University of Wisconsin‐Madison Madison Wisconsin	[135310074]	['135310074 - University of Wisconsin–Madison']	sampled_200_tail
+2942095803	The Transformation of Religion in Late Modernity: the Case of New Catholicism	[-1]	['-1 - None']	sampled_200_tail
+2949810182	Institute of Bioorganic Chemistry, Belorussian Academy of Sciences, Minsk, Belarus	[151823869, 4210138171]	['151823869 - National Academy of Sciences of Belarus', '4210138171 - Institute of Bioorganic Chemistry']	sampled_200_tail
+2958640801	Sociology (Twin Cities)	[-1]	['4210101327 - Twin Cities Orthopedics']	sampled_200_tail
+2969087126	Hangzhou Vocational & Technical College, Hangzhou, China	[4210125098]	['4210125098 - Hangzhou Vocational and Technical College']	sampled_200_tail
+2969087126	[Zhejiang Sci-Tech University, Hangzhou, China]	[1328775524]	['1328775524 - Zhejiang Sci-Tech University']	sampled_200_tail
+2977429616	Mission Support and Test Services, LLC (MSTS), Las Vegas, NV (United States)	[-1]	['-1 - None']	sampled_200_tail
+2984714404	Brimbank Libraries	[-1]	['-1 - None']	sampled_200_tail
+3001829780	Fred Hutchinson Cancer Research Center and University of Washington School of Medicine, Seattle, Washington (G.B.M., B.M.S., M.M., M.S., S.A.P., G.C., S.H., M.B., M.D.F., S.J.L., F.R.A., R.S., P.J.M., H.J.D.)	[4210089486, 201448701]	['4210089486 - Fred Hutchinson Cancer Research Center', '201448701 - University of Washington']	sampled_200_tail
+3001829780	Fred Hutchinson Cancer Research Center, Seattle, Washington (G.S., T.A.G.)	[4210089486]	['4210089486 - Fred Hutchinson Cancer Research Center']	sampled_200_tail
+3007748946	Docente en la Universidad César Vallejo, filial Lima Norte	[2802656227]	['2802656227 - Universidad César Vallejo']	sampled_200_tail
+3014802295	Department of Infectious Diseases, Shunde Hospital, Southern Medical University, Shunde, China.	[4210098425, 58200834]	["4210098425 - The First People's Hospital of Shunde", '58200834 - Southern Medical University']	sampled_200_tail
+3021254148	Technical University of Darmstadt, Institute for Energy Systems and Technology, Otto-Berndt-Straße 2, 64287, Darmstadt, Germany	[31512782]	['31512782 - TU Darmstadt']	sampled_200_tail
+3021254148	Department of Chemical Engineering, Can Tho University, Campus II 3/2 Street, Can Tho City, Viet Nam; Technical University of Darmstadt, Institute for Energy Systems and Technology, Otto-Berndt-Straße 2, 64287, Darmstadt, Germany	[31512782, 177733328]	['31512782 - TU Darmstadt', '177733328 - Can Tho University']	sampled_200_tail
+3028849024	050011,石家庄,河北医科大学第四医院手术室	[-1]	['-1 - None']	sampled_200_tail
+3029048344	510260,广州医学院第二附属医院高级医疗服务部门诊	[-1]	['-1 - None']	sampled_200_tail
+3033589574	Інститут психології імені Г. С. Костюка Національної академії педагогічних наук України	[-1]	['-1 - None']	sampled_200_tail
+3036164105	Rockefeller Neuroscience Institute, West Virginia University School of Medicine, Morgantown, West Virginia.	[4210089362, 12097938]	['4210089362 - Blanchette Rockefeller Neurosciences Institute', '12097938 - West Virginia University']	sampled_200_tail
+3036164105	Case Western Reserve University, University Hospitals of Cleveland, Cleveland, Ohio;	[2799343972, 58956616]	['2799343972 - University Hospitals of Cleveland', '58956616 - Case Western Reserve University']	sampled_200_tail
+3036164105	Basildon and Thurrock University Hospitals, Essex, UK	[263303288]	['263303288 - Basildon and Thurrock University Hospitals NHS Foundation Trust']	sampled_200_tail
+3036164105	Department of Pharmacy Practice, MCPHS University, Boston, Massachusetts.	[165817395]	['165817395 - MCPHS University']	sampled_200_tail
+3036164105	Department of Anesthesiology and Perioperative Medicine, University of Rochester, Rochester, New York	[5388228]	['5388228 - University of Rochester']	sampled_200_tail
+3036164105	Department of Anesthesiology & Pain Medicine University of Washington Seattle Washington	[201448701]	['201448701 - University of Washington']	sampled_200_tail
+3036164105	Department of Pharmacy Practice, Southern Illinois University Edwardsville, Edwardsville, Illinois	[87547150]	['87547150 - Southern Illinois University Edwardsville']	sampled_200_tail
+3036164105	.Johns Hopkins University,Baltimore,Maryland	[145311948]	['145311948 - Johns Hopkins University']	sampled_200_tail
+3036164105	Tufts Medical Center, Boston, Massachusetts	[1290900354]	['1290900354 - Tufts Medical Center']	sampled_200_tail
+3036164105	Tufts University School of Medicine Boston, Massachusetts	[121934306]	['121934306 - Tufts University']	sampled_200_tail
+3036164105	Translational Pain Research Program, Department of Neurosurgery, University of Rochester, New York.	[5388228]	['5388228 - University of Rochester']	sampled_200_tail
+3036164105	Tufts University School of Medicine, Boston, Massachusetts	[121934306]	['121934306 - Tufts University']	sampled_200_tail
+3036164105	Durham University, Durham, UK; University of Exeter, Exeter, UK	[23923803, 190082696]	['23923803 - University of Exeter', '190082696 - Durham University']	sampled_200_tail
+3036164105	College of Medicine and Health, University of Exeter, Exeter, UK; Institute of Health and Well Being, University of Glasgow, Glasgow, UK.	[23923803, 7882870]	['23923803 - University of Exeter', '7882870 - University of Glasgow']	sampled_200_tail
+3036164105	Departments of Neurosurgery, Neurology, Psychiatry and Neuroscience, The Icahn School of Medicine at Mount Sinai, NY, New York	[98704320]	['98704320 - Icahn School of Medicine at Mount Sinai']	sampled_200_tail
+3111654361	1 Brock University Department of History Canada St Catharines, Ontario	[186803428]	['186803428 - Brock University']	sampled_200_tail
+3116222783	National Institute of Radiological Sciences National Institutes for Quantum and Radiological Science and Technology Chiba 263-8555 Japan	[4210114217]	['4210114217 - National Institutes for Quantum and Radiological Science and Technology']	sampled_200_tail
+3116222783	Faculty of Pharmaceutical Sciences, Tohoku Medical and Pharmaceutical University, Sendai, Miyagi 981-8558, Japan.	[85324120]	['85324120 - Tohoku Medical and Pharmaceutical University']	sampled_200_tail
+3116222783	Advance Glycoscience Research Cluster, National University of Ireland Galway, H91 W2TY Galway, Ireland.	[188760350]	['188760350 - National University of Ireland, Galway']	sampled_200_tail
+3122382184	مدرس بقسم الصحافة، کلية الاعلام، جامعة القاهرة	[-1]	['-1 - None']	sampled_200_tail
+3129302747	Yamagata Prefectual Forest Research and Instruction Center	[4210087876]	['4210087876 - Yamagata Prefectural Education Institute']	sampled_200_tail
+3136967900	School of life Science Jilin University Jilin Province China	[4210136497, 194450716]	['4210136497 - Jilin Medical University', '194450716 - Jilin University']	sampled_200_tail
+3136967900	Laboratory Teaching Center of Basic Medicine Norman Bethune Health Science Center of Jilin University Jilin Province China	[4210146008]	['4210146008 - First Bethune Hospital of Jilin University']	sampled_200_tail
+3136967900	Department of Histology and Embryology, College of Basic Medical Sciences, Norman Bethune College of Medicine Jilin University  Changchun Jilin China	[4210146008]	['4210146008 - First Bethune Hospital of Jilin University']	sampled_200_tail
+3145511853	UNIVERSITAS SERANG RAYA	[3132488046]	['3132488046 - Serang Raya University']	sampled_200_tail
+3150642571	#N##TAB##TAB##TAB##TAB# California Institute of Technology#N##TAB##TAB##TAB#	[122411786]	['122411786 - California Institute of Technology']	sampled_200_tail
+3174369862	Department of Anesthesia, Kyoto University Hospital.	[4210150196]	['4210150196 - Kyoto University Hospital']	sampled_200_tail
+3175866260	Institute of Chemical Engineering and Environmental Technology (6670)	[-1]	['-1 - None']	sampled_200_tail
+3184268692	High Energy Accelerator Research Organization, Institute of Materials Structure Science, Tsukuba, Ibaraki (Japan)	[138728355]	['138728355 - High Energy Accelerator Research Organization']	sampled_200_tail
+3184268692	Kyoto Univ. Research Reactor Inst., Kumatori, Osaka (Japan)	[4210165181]	['4210165181 - Kyoto University Research Reactor Institute']	sampled_200_tail
+3184268692	Japan Atomic Energy Research Inst., Tokai, Ibaraki (Japan). Tokai Research Establishment	[1314466530]	['1314466530 - Tokai University']	sampled_200_tail
+3184268692	Yamagata Univ., Faculty of Science, Yamagata (Japan)	[112524849]	['112524849 - Yamagata University']	sampled_200_tail
+3192398789	CNB, CSIC;	[4210104776]	['4210104776 - National Center for Biotechnology']	sampled_200_tail
+3192398789	CSIC	[-1]	['-1 - None']	sampled_200_tail
+3192398789	Ub	[-1]	['-1 - None']	sampled_200_tail
+3199491670	Universiti Kuala Lumpur, Malaysia	[4528857]	['4528857 - University of Kuala Lumpur']	sampled_200_tail
+3199491670	Universiti Putra Malaysia - Malaysia	[130343225]	['130343225 - Universiti Putra Malaysia']	sampled_200_tail
+3204056856	[Oak Ridge National Laboratory, Oak Ridge, TN, United States]	[1289243028]	['1289243028 - Oak Ridge National Laboratory']	sampled_200_tail
+3204056856	Sungkyunkwan University, Korea, Republic of;	[848706]	['848706 - Sungkyunkwan University']	sampled_200_tail
+3204392316	Sekolah Tinggi Ilmu Ekonomi Dwimulya, Serang, Banten, Indonesia	[4210116728]	['4210116728 - Universitas Patria Artha']	sampled_200_tail
+3216353246	Graduate School, Istanbul Technical University, Istanbul 34467, Turkey	[48912391]	['48912391 - Istanbul Technical University']	sampled_200_tail
+3216353246	Department of Management Engineering, Istanbul Technical University, Istanbul 34467, Turkey	[48912391]	['48912391 - Istanbul Technical University']	sampled_200_tail
+4207063735	3, Place louis Pradel, 69001 Lyon, France	[4210136143]	['4210136143 - Hôpital Louis Pradel']	sampled_200_tail
+4230843985	Western Reserve University	[58956616]	['58956616 - Case Western Reserve University']	sampled_200_tail
+4237346386	Peking University People's Hospital	[4210124809]	["4210124809 - Peking University People's Hospital"]	sampled_200_tail
+4237346386	second affilated hospital of nanchang university	[4210108480]	['4210108480 - Second Affiliated Hospital of Nanchang University']	sampled_200_tail
+4237346386	second affiliated hospital of nanchang university	[4210108480]	['4210108480 - Second Affiliated Hospital of Nanchang University']	sampled_200_tail
+4237346386	Nanchang Number 9 Hospital	[4210137346]	['4210157841 - Wuhan No.9 Hospital']	sampled_200_tail
+4242239452	Aus d. I med. Klinik d. kaiserl. Univers. zu Kyoto	[22299242]	['-1 - None']	sampled_200_tail
+4243538010	Cadham Provincial Public Health Laboratory, Winnipeg, Manitoba, Canada	[121800195]	['121800195 - Manitoba Health']	sampled_200_tail
+4243538010	Saskatchewan Disease Control Laboratory, Regina, Saskatchewan, Canada	[2801055904]	['2801055904 - Saskatchewan Disease Control Laboratory']	sampled_200_tail
+4243538010	BC Public Health Microbiology and Reference Laboratory, Vancouver, British Columbia, Canada	[-1]	['4210123364 - BC Mental Health & Substance Use Services']	sampled_200_tail
+4243538010	Vaccine Preventable Bacterial Diseases, National Microbiology Laboratory, Public Health Agency of Canada, Winnipeg, Manitoba, Canada	[177235860]	['177235860 - Public Health Agency of Canada']	sampled_200_tail
+4243538010	Laboratoire de Santé Publique du Québec, Institut National de Santé Publique du Québec, Sainte-Anne-de-Bellevue, Québec, Canada	[4210095493]	['4210095493 - Institut National de Santé Publique du Québec']	sampled_200_tail
+4243538010	Provincial Laboratory for Public Health, Edmonton, Alberta, Canada	[4210090353]	['4210090353 - Provincial Laboratory of Public Health']	sampled_200_tail
+4243538010	Faculty of Medicine, University of Toronto, Ontario, Canada; Public Health Ontario Laboratory, Public Health Ontario, Ontario, Canada	[4210125326,185261750]	['4210125326 - Public Health Ontario']	sampled_200_tail
+4243538010	Institut Pasteur, Invasive Bacterial Infections Unit and National Reference Centre for Meningococci, Paris, France	[157536573]	['157536573 - Institut Pasteur']	sampled_200_tail
+4246551177	i  University of Birmingham	[79619799]	['79619799 - University of Birmingham']	sampled_200_tail
+4246551177	q   Vernacular Architecture Group  ,  Derby	[-1]	['-1 - None']	sampled_200_tail
+4246551177	c  University of Birmingham	[79619799]	['79619799 - University of Birmingham']	sampled_200_tail
+4246551177	j  Trustfor Wessex Archaeology	[-1]	['-1 - None']	sampled_200_tail
+4246551177	n  University of Manchester	[28407311]	['-1 - None']	sampled_200_tail
+4246551177	l     Frome	[-1]	['-1 - None']	sampled_200_tail
+4246551177	p  Trent Valley Archaeological Trust	[2800889407]	['2800889407 - York Archaeological Trust']	sampled_200_tail
+4246551177	g  University College ,  Cardiff	[-1]	['-1 - None']	sampled_200_tail
+4246551177	s   Winchester Museums Service	[-1]	['-1 - None']	sampled_200_tail
+4246551177	k    Tickenham,  Clevedon ,  Avon	[-1]	['-1 - None']	sampled_200_tail
+4246551177	t  University of Southampton	[43439940]	['43439940 - University of Southampton']	sampled_200_tail
+4246551177	v     Bedford	[-1]	['-1 - None']	sampled_200_tail
+4246551177	r   Historic Farm Buildings Group	[-1]	['-1 - None']	sampled_200_tail
+4246551177	u   Winchester Museum Service	[-1]	['4210143177 - Winchester Hospital']	sampled_200_tail
+4246551177	w   Winchester Museums Service	[-1]	['-1 - None']	sampled_200_tail
+4246551177	f  The University of Exeter	[23923803]	['23923803 - University of Exeter']	sampled_200_tail
+4246551177	b     Taunton	[-1]	['-1 - None']	sampled_200_tail
+4246551177	d  University of Oxford,  Department for External Studies	[40120149]	['4210127221 - Department for Education']	sampled_200_tail
+4246551177	o  Wiltshire County Council,  Library &amp; Museum Service	[2799666502]	['2799666502 - Wiltshire Council']	sampled_200_tail
+4246551177	m   Museum of Oxford	[-1]	['-1 - None']	sampled_200_tail
+4246551177	e  University of Leicester	[153648349]	['153648349 - University of Leicester']	sampled_200_tail
+4246551177	a  University of Exeter	[23923803]	['23923803 - University of Exeter']	sampled_200_tail
+4246551177	h   Department of Environment , Newcaste upon Tyne Polytechnic	[32394136]	['-1 - None']	sampled_200_tail
+4250675933	Medical School, University of Oxford, John Radcliffe Hospital, Oxford, UK	[2802742124, 40120149]	['2802742124 - John Radcliffe Hospital', '40120149 - University of Oxford']	sampled_200_tail
+4281256886	Chief Operation Officer and Senior Researcher at Lum Enterprise S.r.l., Puglia,	[-1]	['-1 - None']	sampled_200_tail
+4281256886	Assistant Professor at Lum University Giuseppe Degennaro and Researcher at Lum Enterprise S.r.l., Puglia,	[-1]	['-1 - None']	sampled_200_tail
+4281256886	Senior IT Specialist and Solutions Architects and Researcher at Lum Enterprise S.r.l., Puglia,	[-1]	['-1 - None']	sampled_200_tail
+4281256886	Professor at Lum University Giuseppe Degennaro, and Chief Research Officer-CRO at Lum Enterprise S.r.l., Puglia,	[-1]	['-1 - None']	sampled_200_tail
+4281263612	Life Sciences Institute, University of Michigan, Ann Arbor, Michigan 48109, United States.; Department of Chemistry, University of Michigan, Ann Arbor, Michigan 48109, United States.	[27837315]	['27837315 - University of Michigan–Ann Arbor']	sampled_200_tail
+4281263612	Program in Chemical Biology, University of Michigan, Ann Arbor, Michigan 48109, United States.; Life Sciences Institute, University of Michigan, Ann Arbor, Michigan 48109, United States.	[27837315]	['27837315 - University of Michigan–Ann Arbor']	sampled_200_tail
+4281263612	Life Sciences Institute, University of Michigan, Ann Arbor, Michigan 48109, United States.; Department of Biological Chemistry, University of Michigan, Ann Arbor, Michigan 48109, United States.	[27837315]	['27837315 - University of Michigan–Ann Arbor']	sampled_200_tail
+4282942059	Engineering Mathematics and Physics Department, Faculty of Engineering and Technology, Future University in Egypt, Cairo, Egypt.	[186217134]	['186217134 - Future University in Egypt']	sampled_200_tail
+4282942059	Water Pollution Research Department, National Research Centre, 33 El Buhouth St., Dokki, Giza, 12622, Egypt.	[4210131959]	['4210131959 - National Research Centre']	sampled_200_tail
+4282942059	Water Pollution Research Department, National Research Centre, 33 El Buhouth St., Dokki, Giza, 12622, Egypt. as.el-kalliny@nrc.sci.eg.	[4210131959]	['4210131959 - National Research Centre']	sampled_200_tail
+4282942059	Water Pollution Research Department, National Research Centre, 33 El Buhouth St., Dokki, Giza, 12622, Egypt. Ibrahimnrc@gmail.com.	[4210131959]	['4210131959 - National Research Centre']	sampled_200_tail
+4289019440	Histoire et Cultures de l'Antiquité et du Moyen Âge	[4210141055]	['4210141055 - Cultures et Environnements. Préhistoire, Antiquité, Moyen Âge']	sampled_200_tail
+4289219349	Fraunhofer Institute for Communication, Information Processing and Ergonomics	[4210166245]	['4210166245 - Fraunhofer Institute for Communication, Information Processing and Ergonomics']	sampled_200_tail
+4289219349	DTIS, ONERA, Université Paris Saclay (COmUE) [Palaiseau]	[277688954]	['277688954 - University of Paris-Saclay']	sampled_200_tail
+4291476986	University of Michigan	[27837315]	['27837315 - University of Michigan–Ann Arbor']	sampled_200_tail
+4301354138	Station de pathologie végétale	[-1]	['-1 - None']	sampled_200_tail
+4301354138	Chambre régionale d'agriculture	[-1]	['-1 - None']	sampled_200_tail
+4307896965	National Taiwan University, Taiwan	[16733864]	['16733864 - National Taiwan University']	sampled_200_tail
+4309730503	Instituto de Investigaciones en Ciencias Biomedicas, Universidad Ricardo Palma, Lima, Perú	[4210120426]	['4210120426 - Universidad Ricardo Palma']	sampled_200_tail
+4318276681	École des hautes études en sciences sociales	[90669466]	['-1 - None']	sampled_200_tail

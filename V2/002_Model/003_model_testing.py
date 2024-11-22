@@ -23,7 +23,8 @@ import time
 base_save_path = "./"
 rutaDatos = "../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
-institution_gold_datasets = f"{rutaDatos}institution_gold_datasets_v2/"
+#institution_gold_datasets = f"{rutaDatos}institution_gold_datasets_v2/"
+institution_gold_datasets = f"{base_save_path}DatosDeTesteo/"
 
 # Load the needed files
 with open(os.path.join(curr_model_artifacts_location, "departments_list.pkl"), "rb") as f:
@@ -614,9 +615,10 @@ def get_preds_all_or_original(all_preds, pred_type='all'):
 # Multiple different datasets were used for testing, refer to the documentation to find out more about them. The following code gathers all the datasets into a single dataframe so they can be run through the model.
 
 # %%
-multi_string = pd.read_csv(f"{institution_gold_datasets}multi_string_inst_openalex.tsv", sep="\t") \
+#multi_string = pd.read_csv(f"{institution_gold_datasets}multi_string_inst_openalex.tsv", sep="\t") \
+multi_string = pd.read_csv(f"{institution_gold_datasets}multi_string_inst_fer.csv", sep=",") \
     [['paper_id','affiliation_string','labels','dataset']]
-multi_string['labels'] = multi_string['labels'].apply(lambda x: [int(i) for i in x.split("||||")])
+#multi_string['labels'] = multi_string['labels'].apply(lambda x: [int(i) for i in x.split("||||")])
 
 cwts_1 = pd.read_csv(f"{institution_gold_datasets}cwts_related_labeled.tsv", sep="\t") \
     [['paper_id','affiliation_string','labels','dataset']]
