@@ -24,7 +24,6 @@ base_save_path = "./"
 rutaDatos = "../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
 institution_gold_datasets = f"{rutaDatos}institution_gold_datasets_v2/"
-tf_save_directory = f"{base_save_path}all_strings_language_model_15epochs"
 
 # Load the needed files
 with open(os.path.join(curr_model_artifacts_location, "departments_list.pkl"), "rb") as f:
@@ -57,8 +56,7 @@ with open(os.path.join(curr_model_artifacts_location, "city_country_list.pkl"), 
 
 print("Loaded strings of city/country combinations")
 
-#tf_save_directory = f"{base_save_path}all_strings_language_model_15epochs"
-with open(os.path.join(tf_save_directory, "affiliation_vocab.pkl"), "rb") as f:
+with open(os.path.join(base_save_path, "affiliation_vocab.pkl"), "rb") as f:
     affiliation_vocab = pickle.load(f)
 
 print('affiliation_vocab: ------------------------------')
