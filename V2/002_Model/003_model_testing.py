@@ -193,6 +193,9 @@ def get_language_model_prediction(decoded_text, all_countries):
     
     all_scores = all_scores.numpy().tolist()
     all_labels = all_labels.numpy().tolist()
+    print('all_labels: -------------------------------------')
+    print(len(all_labels))
+    print(all_labels[-10:])
     
     final_preds_scores = []
     for scores, labels, countries in zip(all_scores, all_labels, all_countries):
