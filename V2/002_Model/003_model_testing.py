@@ -66,7 +66,7 @@ inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
 print("Loaded affiliation vocab")
 
 print('inverse_affiliation_vocab: ------------------------------')
-print(len(inverse_affiliation_vocab.key()))
+print(len(inverse_affiliation_vocab.keys()))
 
 
 # Load the tokenizers
