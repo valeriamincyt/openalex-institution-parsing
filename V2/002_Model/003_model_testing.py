@@ -23,7 +23,7 @@ import time
 base_save_path = "./"
 rutaDatos = "../Datos/"
 curr_model_artifacts_location = f"{rutaDatos}institution_tagger_v2_artifacts/"
-institution_gold_datasets = f"{rutaDatos}institution_gold_datasets/"
+institution_gold_datasets = f"{rutaDatos}institution_gold_datasets_v2/"
 
 # Load the needed files
 with open(os.path.join(curr_model_artifacts_location, "departments_list.pkl"), "rb") as f:
