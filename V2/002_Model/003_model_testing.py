@@ -60,12 +60,14 @@ with open(os.path.join(base_save_path, "affiliation_vocab.pkl"), "rb") as f:
     affiliation_vocab = pickle.load(f)
 
 print('affiliation_vocab: ------------------------------')
-print(len(affiliation_vocab.items()))
-print(affiliation_vocab.items()[0:5])
+print(len(affiliation_vocab.key()))
 
 inverse_affiliation_vocab = {i:j for j,i in affiliation_vocab.items()}
-
 print("Loaded affiliation vocab")
+
+print('inverse_affiliation_vocab: ------------------------------')
+print(len(inverse_affiliation_vocab.key()))
+
 
 # Load the tokenizers
 #language_tokenizer = DistilBertTokenizer.from_pretrained("distilbert-base-uncased", return_tensors='tf')
